@@ -8,19 +8,19 @@
       
       
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
     
     
       
-        <title>Getting Started - MNE Study Template</title>
+        <title>SSP & ICA - MNE Study Template</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.19190aaf.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.19190aaf.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.24b84193.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.24b84193.min.css">
         
       
     
@@ -35,7 +35,7 @@
     
     
     
-      <link rel="stylesheet" href="../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
     
       
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prepare-your-dataset" class="md-skip">
+        <a href="#config.use_ssp" class="md-skip">
           Skip to content
         </a>
       
@@ -71,7 +71,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
+    <a href="../../.." title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Getting Started
+              SSP & ICA
             
           </span>
         </div>
@@ -145,7 +145,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
+    <a href="../../.." title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -162,7 +162,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." class="md-nav__link">
+    <a href="../../.." class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -174,7 +174,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../install/" class="md-nav__link">
+    <a href="../../../install/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -184,59 +184,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Getting Started
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../getting_started/" class="md-nav__link">
       Getting Started
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prepare-your-dataset" class="md-nav__link">
-    Prepare your dataset
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adjust-your-configuration-file" class="md-nav__link">
-    Adjust your configuration file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-the-study-template" class="md-nav__link">
-    Run the Study Template
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -244,10 +196,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Configuration Options
@@ -267,7 +221,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/basic/" class="md-nav__link">
+    <a href="../../basic/" class="md-nav__link">
       Basic settings
     </a>
   </li>
@@ -300,7 +254,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/autobads/" class="md-nav__link">
+    <a href="../../continuous_data/autobads/" class="md-nav__link">
       Bad channel detection
     </a>
   </li>
@@ -312,7 +266,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/maxfilter/" class="md-nav__link">
+    <a href="../../continuous_data/maxfilter/" class="md-nav__link">
       Maxwell filter
     </a>
   </li>
@@ -324,7 +278,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/stim_artifact/" class="md-nav__link">
+    <a href="../../continuous_data/stim_artifact/" class="md-nav__link">
       Stimulation artifact
     </a>
   </li>
@@ -357,7 +311,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/filter/" class="md-nav__link">
+    <a href="../../continuous_data/filter/" class="md-nav__link">
       Filtering
     </a>
   </li>
@@ -369,7 +323,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/resample/" class="md-nav__link">
+    <a href="../../continuous_data/resample/" class="md-nav__link">
       Resampling
     </a>
   </li>
@@ -389,10 +343,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
     
     <label class="md-nav__link" for="nav-4-3">
       Epoched data
@@ -412,7 +368,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/epochs/" class="md-nav__link">
+    <a href="../epochs/" class="md-nav__link">
       Epoching
     </a>
   </li>
@@ -424,7 +380,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/artifacts/" class="md-nav__link">
+    <a href="../artifacts/" class="md-nav__link">
       Amplitude-based artifact removal
     </a>
   </li>
@@ -434,11 +390,101 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../settings/epoched_data/ssp_ica/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        SSP & ICA
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       SSP & ICA
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config.use_ssp" class="md-nav__link">
+    use_ssp
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.use_ica" class="md-nav__link">
+    use_ica
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_algorithm" class="md-nav__link">
+    ica_algorithm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_l_freq" class="md-nav__link">
+    ica_l_freq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_max_iterations" class="md-nav__link">
+    ica_max_iterations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_n_components" class="md-nav__link">
+    ica_n_components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_decim" class="md-nav__link">
+    ica_decim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_ctps_ecg_threshold" class="md-nav__link">
+    ica_ctps_ecg_threshold
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_eog_threshold" class="md-nav__link">
+    ica_eog_threshold
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -448,7 +494,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/statistics/" class="md-nav__link">
+    <a href="../statistics/" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -460,7 +506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/time_freq/" class="md-nav__link">
+    <a href="../time_freq/" class="md-nav__link">
       Time-frequency analysis
     </a>
   </li>
@@ -477,7 +523,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/inverse/" class="md-nav__link">
+    <a href="../inverse/" class="md-nav__link">
       Source estimation
     </a>
   </li>
@@ -510,22 +556,64 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prepare-your-dataset" class="md-nav__link">
-    Prepare your dataset
+  <a href="#config.use_ssp" class="md-nav__link">
+    use_ssp
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#adjust-your-configuration-file" class="md-nav__link">
-    Adjust your configuration file
+  <a href="#config.use_ica" class="md-nav__link">
+    use_ica
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-the-study-template" class="md-nav__link">
-    Run the Study Template
+  <a href="#config.ica_algorithm" class="md-nav__link">
+    ica_algorithm
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_l_freq" class="md-nav__link">
+    ica_l_freq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_max_iterations" class="md-nav__link">
+    ica_max_iterations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_n_components" class="md-nav__link">
+    ica_n_components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_decim" class="md-nav__link">
+    ica_decim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_ctps_ecg_threshold" class="md-nav__link">
+    ica_ctps_ecg_threshold
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_eog_threshold" class="md-nav__link">
+    ica_eog_threshold
   </a>
   
 </li>
@@ -543,46 +631,153 @@
               
                 
                 
-                  <h1>Getting Started</h1>
+                  <h1>SSP & ICA</h1>
                 
-                <h2 id="prepare-your-dataset">Prepare your dataset</h2>
-<p>The Study Template <strong>only</strong> works with BIDS-formatted raw data. To find out
-more about BIDS and how to convert your data to the BIDS format, please see
-<a href="https://mne.tools/mne-bids/stable/index.html">the documentation of MNE-BIDS</a>.</p>
-<p>It is of great importance that</p>
-<ul>
-<li>
-<p>the <strong>data is anonymized</strong> if you require anonymization,
-  as the Study Template does not allow for anonymization.</p>
-<details class="info"><summary>Why?</summary><p>This was a conscious design decision, not a technical
-limitation <em>per se</em>. If you think this decision should be
-reconsidered, please get in touch with the developers.</p>
-</details>
-</li>
-<li>
-<p><strong>faulty channels are marked</strong> as "bad".</p>
-<details class="info"><summary>Why?</summary><p>While we <em>do</em> run automated bad channel detection in the
-Study Template, it is considered good practice to flag
-obviously problematic channels as such in the BIDS dataset.</p>
-</details>
-</li>
-</ul>
-<h2 id="adjust-your-configuration-file">Adjust your configuration file</h2>
-<p>The Study Template ships with a default configuration file, <code>config.py</code>.
-You need to <strong>create a copy</strong> of that configuration file and adjust all
-parameters that are relevant to your data processing and analysis.</p>
-<details class="info" open="open"><summary>Info</summary><p>You should <strong>only</strong> need to touch the configuration file.
-None of the scripts should be edited.</p>
-</details>
-<h2 id="run-the-study-template">Run the Study Template</h2>
-<p>Run the full Study Template by invoking
-<div class="highlight"><pre><span></span><code>python run.py all --config<span class="o">=</span>/path/to/your/custom_config.py
-</code></pre></div>
-To only run the sensor-level, source-level, or report-generating steps, run:
-<div class="highlight"><pre><span></span><code>python run.py sensor --config<span class="o">=</span>/path/to/your/custom_config.py  <span class="c1"># sensor-level</span>
-python run.py <span class="nb">source</span> --config<span class="o">=</span>/path/to/your/custom_config.py  <span class="c1"># source-level</span>
-python run.py report --config<span class="o">=</span>/path/to/your/custom_config.py  <span class="c1"># generate Reports</span>
-</code></pre></div></p>
+                <div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.use_ssp">
+
+        <code class="highlight">
+use_ssp: <span class="nb">bool</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Whether signal-space projection should be used or not.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.use_ica">
+
+        <code class="highlight">
+use_ica: <span class="nb">bool</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Whether independent component analysis should be used or not.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_algorithm">
+
+        <code class="highlight">
+ica_algorithm: <span class="n">Literal</span><span class="p">[</span><span class="s1">'picard'</span><span class="p">,</span> <span class="s1">'fastica'</span><span class="p">,</span> <span class="s1">'extended_infomax'</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The ICA algorithm to use.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_l_freq">
+
+        <code class="highlight">
+ica_l_freq: <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The cutoff frequency of the high-pass filter to apply before running ICA.
+Using a relatively high cutoff like 1 Hz will remove slow drifts from the
+data, yielding improved ICA results.</p>
+<p>Set to <code>None</code> to not apply an additional high-pass filter.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The filter will be applied to raw data which was already filtered
+  according to the <code>l_freq</code> and <code>h_freq</code> settings. After filtering, the
+  data will be epoched, and the epochs will be submitted to ICA.</p>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_max_iterations">
+
+        <code class="highlight">
+ica_max_iterations: <span class="nb">int</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Maximum number of iterations to decompose the data into independent
+components. A low number means to finish earlier, but the consequence is
+that the algorithm may not have finished converging. To ensure
+convergence, pick a high number here (e.g. 3000); yet the algorithm will
+terminate as soon as it determines that is has successfully converged, and
+not necessarily exhaust the maximum number of iterations. Note that the
+default of 200 seems to be sufficient for Picard in many datasets, because
+it converges quicker than the other algorithms; but e.g. for FastICA, this
+limit may be too low to achieve convergence.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_n_components">
+
+        <code class="highlight">
+ica_n_components: <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>MNE conducts ICA as a sort of a two-step procedure: First, a PCA is run
+on the data (trying to exclude zero-valued components in rank-deficient
+data); and in the second step, the principal componenets are passed
+to the actual ICA. You can select how many of the total principal
+components to pass to ICA – it can be all or just a subset. This determines
+how many independent components to fit, and can be controlled via this
+setting.</p>
+<p>If int, specifies the number of principal components that are passed to the
+ICA algorithm, which will be the number of independent components to
+fit. It must not be greater than the rank of your data (which is typically
+the number of channels, but may be less in some cases).</p>
+<p>If float between 0 and 1, all principal components with cumulative
+explained variance less than the value specified here will be passed to
+ICA.</p>
+<p>If <code>None</code>, <strong>all</strong> principal components will be used.</p>
+<p>This setting may drastically alter the time required to compute ICA.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_decim">
+
+        <code class="highlight">
+ica_decim: <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The decimation parameter to compute ICA. If 5 it means
+that 1 every 5 sample is used by ICA solver. The higher the faster
+it is to run but the less data you have to compute a good ICA. Set to
+<code>1</code> or <code>None</code> to not perform any decimation.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_ctps_ecg_threshold">
+
+        <code class="highlight">
+ica_ctps_ecg_threshold: <span class="nb">float</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The threshold parameter passed to <code>find_bads_ecg</code> method.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_eog_threshold">
+
+        <code class="highlight">
+ica_eog_threshold: <span class="nb">float</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The threshold to use during automated EOG classification. Lower values mean
+that more ICs will be identified as EOG-related. If too low, the
+false-alarm rate increases dramatically.</p>
+</div>
+</div>
                 
               
               
@@ -601,7 +796,7 @@ python run.py report --config<span class="o">=</span>/path/to/your/custom_config
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../install/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../artifacts/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -610,19 +805,19 @@ python run.py report --config<span class="o">=</span>/path/to/your/custom_config
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Installation
+                Amplitude-based artifact removal
               </div>
             </div>
           </a>
         
         
-          <a href="../settings/basic/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../statistics/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Basic settings
+                Statistics
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -649,15 +844,15 @@ python run.py report --config<span class="o">=</span>/path/to/your/custom_config
       
     </div>
     
-      <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

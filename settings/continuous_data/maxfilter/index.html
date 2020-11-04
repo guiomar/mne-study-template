@@ -8,19 +8,19 @@
       
       
       
-      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
     
     
       
-        <title>Getting Started - MNE Study Template</title>
+        <title>Maxwell filter - MNE Study Template</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.19190aaf.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.19190aaf.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.24b84193.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.24b84193.min.css">
         
       
     
@@ -35,7 +35,7 @@
     
     
     
-      <link rel="stylesheet" href="../css/extra.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
     
       
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#prepare-your-dataset" class="md-skip">
+        <a href="#config.use_maxwell_filter" class="md-skip">
           Skip to content
         </a>
       
@@ -71,7 +71,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href=".." title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
+    <a href="../../.." title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Getting Started
+              Maxwell filter
             
           </span>
         </div>
@@ -145,7 +145,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
+    <a href="../../.." title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -162,7 +162,7 @@
 
 
   <li class="md-nav__item">
-    <a href=".." class="md-nav__link">
+    <a href="../../.." class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -174,7 +174,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../install/" class="md-nav__link">
+    <a href="../../../install/" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -184,59 +184,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Getting Started
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../getting_started/" class="md-nav__link">
       Getting Started
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prepare-your-dataset" class="md-nav__link">
-    Prepare your dataset
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adjust-your-configuration-file" class="md-nav__link">
-    Adjust your configuration file
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#run-the-study-template" class="md-nav__link">
-    Run the Study Template
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
     
@@ -244,10 +196,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Configuration Options
@@ -267,7 +221,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/basic/" class="md-nav__link">
+    <a href="../../basic/" class="md-nav__link">
       Basic settings
     </a>
   </li>
@@ -277,10 +231,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     
     <label class="md-nav__link" for="nav-4-2">
       Continuous data
@@ -300,7 +256,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/autobads/" class="md-nav__link">
+    <a href="../autobads/" class="md-nav__link">
       Bad channel detection
     </a>
   </li>
@@ -310,11 +266,66 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../settings/continuous_data/maxfilter/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Maxwell filter
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Maxwell filter
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config.use_maxwell_filter" class="md-nav__link">
+    use_maxwell_filter
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.mf_st_duration" class="md-nav__link">
+    mf_st_duration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.mf_head_origin" class="md-nav__link">
+    mf_head_origin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.mf_reference_run" class="md-nav__link">
+    mf_reference_run
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -324,7 +335,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/stim_artifact/" class="md-nav__link">
+    <a href="../stim_artifact/" class="md-nav__link">
       Stimulation artifact
     </a>
   </li>
@@ -357,7 +368,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/filter/" class="md-nav__link">
+    <a href="../filter/" class="md-nav__link">
       Filtering
     </a>
   </li>
@@ -369,7 +380,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/continuous_data/resample/" class="md-nav__link">
+    <a href="../resample/" class="md-nav__link">
       Resampling
     </a>
   </li>
@@ -412,7 +423,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/epochs/" class="md-nav__link">
+    <a href="../../epoched_data/epochs/" class="md-nav__link">
       Epoching
     </a>
   </li>
@@ -424,7 +435,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/artifacts/" class="md-nav__link">
+    <a href="../../epoched_data/artifacts/" class="md-nav__link">
       Amplitude-based artifact removal
     </a>
   </li>
@@ -436,7 +447,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/ssp_ica/" class="md-nav__link">
+    <a href="../../epoched_data/ssp_ica/" class="md-nav__link">
       SSP & ICA
     </a>
   </li>
@@ -448,7 +459,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/statistics/" class="md-nav__link">
+    <a href="../../epoched_data/statistics/" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -460,7 +471,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/time_freq/" class="md-nav__link">
+    <a href="../../epoched_data/time_freq/" class="md-nav__link">
       Time-frequency analysis
     </a>
   </li>
@@ -477,7 +488,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../settings/epoched_data/inverse/" class="md-nav__link">
+    <a href="../../epoched_data/inverse/" class="md-nav__link">
       Source estimation
     </a>
   </li>
@@ -510,22 +521,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#prepare-your-dataset" class="md-nav__link">
-    Prepare your dataset
+  <a href="#config.use_maxwell_filter" class="md-nav__link">
+    use_maxwell_filter
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#adjust-your-configuration-file" class="md-nav__link">
-    Adjust your configuration file
+  <a href="#config.mf_st_duration" class="md-nav__link">
+    mf_st_duration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#run-the-study-template" class="md-nav__link">
-    Run the Study Template
+  <a href="#config.mf_head_origin" class="md-nav__link">
+    mf_head_origin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.mf_reference_run" class="md-nav__link">
+    mf_reference_run
   </a>
   
 </li>
@@ -543,46 +561,109 @@
               
                 
                 
-                  <h1>Getting Started</h1>
+                  <h1>Maxwell filter</h1>
                 
-                <h2 id="prepare-your-dataset">Prepare your dataset</h2>
-<p>The Study Template <strong>only</strong> works with BIDS-formatted raw data. To find out
-more about BIDS and how to convert your data to the BIDS format, please see
-<a href="https://mne.tools/mne-bids/stable/index.html">the documentation of MNE-BIDS</a>.</p>
-<p>It is of great importance that</p>
-<ul>
-<li>
-<p>the <strong>data is anonymized</strong> if you require anonymization,
-  as the Study Template does not allow for anonymization.</p>
-<details class="info"><summary>Why?</summary><p>This was a conscious design decision, not a technical
-limitation <em>per se</em>. If you think this decision should be
-reconsidered, please get in touch with the developers.</p>
+                <div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.use_maxwell_filter">
+
+        <code class="highlight">
+use_maxwell_filter: <span class="nb">bool</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Whether or not to use Maxwell filtering to preprocess the data.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If the data were recorded with internal active compensation (MaxShield),
+they need to be run through Maxwell filter to avoid distortions.
+Bad channels need to be set through BIDS channels.tsv and / or via the
+<code>find_flat_channels_meg</code> and <code>find_noisy_channels_meg</code> options above
+before applying Maxwell filter.</p>
+</div>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.mf_st_duration">
+
+        <code class="highlight">
+mf_st_duration: <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>There are two kinds of maxfiltering: SSS (signal space separation) and tSSS
+(temporal signal space separation)
+(see <a href="http://cds.cern.ch/record/709081/files/0401166.pdf">Taulu et al., 2004</a>).</p>
+<p>If not None, apply spatiotemporal SSS (tSSS) with specified buffer
+duration (in seconds). MaxFilter™'s default is 10.0 seconds in v2.2.
+Spatiotemporal SSS acts as implicitly as a high-pass filter where the
+cut-off frequency is 1/st_dur Hz. For this (and other) reasons, longer
+buffers are generally better as long as your system can handle the
+higher memory usage. To ensure that each window is processed
+identically, choose a buffer length that divides evenly into your data.
+Any data at the trailing edge that doesn't fit evenly into a whole
+buffer window will be lumped into the previous buffer.</p>
+<details class="info" open="open"><summary>Good Practice / Advice</summary><p>If you are interested in low frequency activity (&lt;0.1Hz), avoid using
+tSSS and set <code>mf_st_duration</code> to <code>None</code>.</p>
+<p>If you are interested in low frequency above 0.1 Hz, you can use the
+default <code>mf_st_duration</code> to 10 s, meaning it acts like a 0.1 Hz
+high-pass filter.</p>
 </details>
-</li>
-<li>
-<p><strong>faulty channels are marked</strong> as "bad".</p>
-<details class="info"><summary>Why?</summary><p>While we <em>do</em> run automated bad channel detection in the
-Study Template, it is considered good practice to flag
-obviously problematic channels as such in the BIDS dataset.</p>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">mf_st_duration</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">mf_st_duration</span> <span class="o">=</span> <span class="mf">10.</span>  <span class="c1"># to apply tSSS with 0.1Hz highpass filter.</span>
+</code></pre>
+</div>
 </details>
-</li>
-</ul>
-<h2 id="adjust-your-configuration-file">Adjust your configuration file</h2>
-<p>The Study Template ships with a default configuration file, <code>config.py</code>.
-You need to <strong>create a copy</strong> of that configuration file and adjust all
-parameters that are relevant to your data processing and analysis.</p>
-<details class="info" open="open"><summary>Info</summary><p>You should <strong>only</strong> need to touch the configuration file.
-None of the scripts should be edited.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.mf_head_origin">
+
+        <code class="highlight">
+mf_head_origin        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p><code>mf_head_origin</code> : array-like, shape (3,) | 'auto'
+Origin of internal and external multipolar moment space in meters.
+If 'auto', it will be estimated from headshape points.
+If automatic fitting fails (e.g., due to having too few digitization
+points), consider separately calling the fitting function with different
+options or specifying the origin manually.</p>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">mf_head_origin</span> <span class="o">=</span> <span class="s1">'auto'</span>
+</code></pre>
+</div>
 </details>
-<h2 id="run-the-study-template">Run the Study Template</h2>
-<p>Run the full Study Template by invoking
-<div class="highlight"><pre><span></span><code>python run.py all --config<span class="o">=</span>/path/to/your/custom_config.py
-</code></pre></div>
-To only run the sensor-level, source-level, or report-generating steps, run:
-<div class="highlight"><pre><span></span><code>python run.py sensor --config<span class="o">=</span>/path/to/your/custom_config.py  <span class="c1"># sensor-level</span>
-python run.py <span class="nb">source</span> --config<span class="o">=</span>/path/to/your/custom_config.py  <span class="c1"># source-level</span>
-python run.py report --config<span class="o">=</span>/path/to/your/custom_config.py  <span class="c1"># generate Reports</span>
-</code></pre></div></p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.mf_reference_run">
+
+        <code class="highlight">
+mf_reference_run: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Despite all possible care to avoid movements in the MEG, the participant
+will likely slowly drift down from the Dewar or slightly shift the head
+around in the course of the recording session. Hence, to take this into
+account, we are realigning all data to a single position. For this, you need
+to define a reference run (typically the one in the middle of
+the recording session).</p>
+<p>Which run to take as the reference for adjusting the head position of all
+runs. If <code>None</code>, pick the first run.</p>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">mf_reference_run</span> <span class="o">=</span> <span class="s1">'01'</span>  <span class="c1"># Use run "01"</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
                 
               
               
@@ -601,7 +682,7 @@ python run.py report --config<span class="o">=</span>/path/to/your/custom_config
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../install/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../autobads/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -610,19 +691,19 @@ python run.py report --config<span class="o">=</span>/path/to/your/custom_config
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Installation
+                Bad channel detection
               </div>
             </div>
           </a>
         
         
-          <a href="../settings/basic/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../stim_artifact/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Basic settings
+                Stimulation artifact
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -649,15 +730,15 @@ python run.py report --config<span class="o">=</span>/path/to/your/custom_config
       
     </div>
     
-      <script src="../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "..",
+          base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

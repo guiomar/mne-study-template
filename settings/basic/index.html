@@ -1,0 +1,1199 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
+    
+    
+      
+        <title>Basic settings - MNE Study Template</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.19190aaf.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.24b84193.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+      
+    
+    
+    
+      <link rel="stylesheet" href="../../css/extra.css">
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+      
+  
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#config.study_name" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid" aria-label="Header">
+    <a href="../.." title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header-nav__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header-nav__title" data-md-component="header-title">
+      
+        <div class="md-header-nav__ellipsis">
+          <span class="md-header-nav__topic md-ellipsis">
+            MNE Study Template
+          </span>
+          <span class="md-header-nav__topic md-ellipsis">
+            
+              Basic settings
+            
+          </span>
+        </div>
+      
+    </div>
+    
+      <label class="md-header-nav__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    MNE Study Template
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../install/" class="md-nav__link">
+      Installation
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../getting_started/" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    
+    <label class="md-nav__link" for="nav-4">
+      Configuration Options
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Configuration Options" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Configuration Options
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Basic settings
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      Basic settings
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config.study_name" class="md-nav__link">
+    study_name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.bids_root" class="md-nav__link">
+    bids_root
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.subjects_dir" class="md-nav__link">
+    subjects_dir
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.daysback" class="md-nav__link">
+    daysback
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.interactive" class="md-nav__link">
+    interactive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.crop" class="md-nav__link">
+    crop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.sessions" class="md-nav__link">
+    sessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.task" class="md-nav__link">
+    task
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.runs" class="md-nav__link">
+    runs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.acq" class="md-nav__link">
+    acq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.proc" class="md-nav__link">
+    proc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.rec" class="md-nav__link">
+    rec
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.space" class="md-nav__link">
+    space
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.subjects" class="md-nav__link">
+    subjects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.exclude_subjects" class="md-nav__link">
+    exclude_subjects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.process_er" class="md-nav__link">
+    process_er
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ch_types" class="md-nav__link">
+    ch_types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.data_type" class="md-nav__link">
+    data_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.eeg_template_montage" class="md-nav__link">
+    eeg_template_montage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Continuous data
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Continuous data" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        <span class="md-nav__icon md-icon"></span>
+        Continuous data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../continuous_data/autobads/" class="md-nav__link">
+      Bad channel detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../continuous_data/maxfilter/" class="md-nav__link">
+      Maxwell filter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../continuous_data/stim_artifact/" class="md-nav__link">
+      Stimulation artifact
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4">
+    
+    <label class="md-nav__link" for="nav-4-2-4">
+      Frequency filtering & resampling
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Frequency filtering & resampling" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Frequency filtering & resampling
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../continuous_data/filter/" class="md-nav__link">
+      Filtering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../continuous_data/resample/" class="md-nav__link">
+      Resampling
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Epoched data
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Epoched data" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Epoched data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../epoched_data/epochs/" class="md-nav__link">
+      Epoching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../epoched_data/artifacts/" class="md-nav__link">
+      Amplitude-based artifact removal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../epoched_data/ssp_ica/" class="md-nav__link">
+      SSP & ICA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../epoched_data/statistics/" class="md-nav__link">
+      Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../epoched_data/time_freq/" class="md-nav__link">
+      Time-frequency analysis
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../epoched_data/inverse/" class="md-nav__link">
+      Source estimation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config.study_name" class="md-nav__link">
+    study_name
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.bids_root" class="md-nav__link">
+    bids_root
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.subjects_dir" class="md-nav__link">
+    subjects_dir
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.daysback" class="md-nav__link">
+    daysback
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.interactive" class="md-nav__link">
+    interactive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.crop" class="md-nav__link">
+    crop
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.sessions" class="md-nav__link">
+    sessions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.task" class="md-nav__link">
+    task
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.runs" class="md-nav__link">
+    runs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.acq" class="md-nav__link">
+    acq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.proc" class="md-nav__link">
+    proc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.rec" class="md-nav__link">
+    rec
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.space" class="md-nav__link">
+    space
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.subjects" class="md-nav__link">
+    subjects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.exclude_subjects" class="md-nav__link">
+    exclude_subjects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.process_er" class="md-nav__link">
+    process_er
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ch_types" class="md-nav__link">
+    ch_types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.data_type" class="md-nav__link">
+    data_type
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.eeg_template_montage" class="md-nav__link">
+    eeg_template_montage
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>Basic settings</h1>
+                
+                <div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.study_name">
+
+        <code class="highlight">
+study_name: <span class="nb">str</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Specify the name of your study. It will be used to populate filenames for
+saving the analysis results.</p>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">study_name</span> <span class="o">=</span> <span class="s1">'my-study'</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.bids_root">
+
+        <code class="highlight">
+bids_root: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Speficy the BIDS root directory. Pass an empty string or <code>`None</code> to use
+the value specified in the <code>BIDS_ROOT</code> environment variable instead.
+Raises an exception if the BIDS root has not been specified.</p>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">bids_root</span> <span class="o">=</span> <span class="s1">'/path/to/your/bids_root'</span>  <span class="c1"># Use this to specify a path here.</span>
+<span class="n">bids_root</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># Make use of the ``BIDS_ROOT`` environment variable.</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.subjects_dir">
+
+        <code class="highlight">
+subjects_dir: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Path to the directory that contains the MRI data files and their
+derivativesfor all subjects. Specifically, the <code>subjects_dir</code> is the
+$SUBJECTS_DIR used by the Freesurfer software.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.daysback">
+
+        <code class="highlight">
+daysback: <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This parameter will soon be removed!
+ Anonymization should be done on the BIDS dataset <strong>before</strong> running
+ the Study Template!</p>
+</div>
+<p>If not <code>None</code>, apply a time shift to dates to adjust for limitateions
+of FIFF files.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.interactive">
+
+        <code class="highlight">
+interactive: <span class="nb">bool</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>If True, the scripts will provide some interactive elements, such as
+figures. If running the scripts from a notebook or Spyder,
+run <code>%matplotlib qt</code> in the command line to open the figures in a separate
+window.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.crop">
+
+        <code class="highlight">
+crop: <span class="n">Optional</span><span class="p">[</span><span class="nb">tuple</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>If tuple, (tmin, tmax) to crop the raw data
+If None (default), do not crop.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.sessions">
+
+        <code class="highlight">
+sessions: <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">]]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The sessions to process.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.task">
+
+        <code class="highlight">
+task: <span class="nb">str</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The task to process.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.runs">
+
+        <code class="highlight">
+runs: <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">]]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The runs to process.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.acq">
+
+        <code class="highlight">
+acq: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The BIDS <code>acquisition</code> entity.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.proc">
+
+        <code class="highlight">
+proc: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The BIDS <code>processing</code> entity.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.rec">
+
+        <code class="highlight">
+rec: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The BIDS <code>recording</code> entity.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.space">
+
+        <code class="highlight">
+space: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The BIDS <code>space</code> entity.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.subjects">
+
+        <code class="highlight">
+subjects: <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">]]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Subjects to analyze. If <code>'all'</code>, include all subjects. To only
+include a subset of subjects, pass a list of their identifiers. Even
+if you plan on analyzing only a single subject, pass their identifier
+as a list.</p>
+<p>Please note that if you intend to EXCLUDE only a few subjects, you
+should consider setting <code>subjects = 'all'</code> and adding the
+identifiers of the excluded subjects to <code>exclude_subjects</code> (see next
+section).</p>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">subjects</span> <span class="o">=</span> <span class="s1">'all'</span>  <span class="c1"># Include all subjects.</span>
+<span class="n">subjects</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'05'</span><span class="p">]</span>  <span class="c1"># Only include subject 05.</span>
+<span class="n">subjects</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'01'</span><span class="p">,</span> <span class="s1">'02'</span><span class="p">]</span>  <span class="c1"># Only include subjects 01 and 02.</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.exclude_subjects">
+
+        <code class="highlight">
+exclude_subjects: <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Specify subjects to exclude from analysis. The MEG empty-room mock-subject
+is automatically excluded from regular analysis.</p>
+<details class="info" open="open"><summary>Good Practice / Advice</summary><p>Keep track of the criteria leading you to exclude
+a participant (e.g. too many movements, missing blocks, aborted experiment,
+did not understand the instructions, etc, ...)
+The <code>emptyroom</code> subject will be excluded automatically.</p>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.process_er">
+
+        <code class="highlight">
+process_er: <span class="nb">bool</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>Whether to apply the same pre-processing steps to the empty-room data as
+to the experimental data (up until including frequency filtering). This
+is required if you wish to use the empty-room recording to estimate noise
+covariance (via <code>noise_cov='emptyroom'</code>). The empty-room recording
+corresponding to the processed experimental data will be retrieved
+automatically.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ch_types">
+
+        <code class="highlight">
+ch_types: <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The channel types to consider.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Currently, MEG and EEG data cannot be processed together.</p>
+</div>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="c1"># Use EEG channels:</span>
+<span class="n">ch_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'eeg'</span><span class="p">]</span>
+
+<span class="c1"># Use magnetometer and gradiometer MEG channels:</span>
+<span class="n">ch_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'mag'</span><span class="p">,</span> <span class="s1">'grad'</span><span class="p">]</span>
+
+<span class="c1"># Currently does not work and will raise an error message:</span>
+<span class="n">ch_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'meg'</span><span class="p">,</span> <span class="s1">'eeg'</span><span class="p">]</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.data_type">
+
+        <code class="highlight">
+data_type: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>The BIDS data type.</p>
+<p>For MEG recordings, this will usually be 'meg'; and for EEG, 'eeg'.
+However, if your dataset contains simultaneous recordings of MEG and EEG,
+stored in a single file, you will typically need to set this to 'meg'.
+If <code>None</code>, we will assume that the data type matches the channel type.</p>
+<details class="example" open="open"><summary>Example</summary><p>The dataset contains simultaneous recordings of MEG and EEG, and we only
+wish to process the EEG data, which is stored inside the MEG files:</p>
+<div class="highlight">
+<pre><span></span><code><span class="n">ch_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'eeg'</span><span class="p">]</span>
+<span class="n">data_type</span> <span class="o">=</span> <span class="s1">'eeg'</span>
+</code></pre>
+</div>
+<p>The dataset contains simultaneous recordings of MEG and EEG, and we only
+wish to process the gradiometer data:</p>
+<div class="highlight">
+<pre><span></span><code><span class="n">ch_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'grad'</span><span class="p">]</span>
+<span class="n">data_type</span> <span class="o">=</span> <span class="s1">'meg'</span>  <span class="c1"># or data_type = None</span>
+</code></pre>
+</div>
+<p>The dataset contains only EEG data:</p>
+<div class="highlight">
+<pre><span></span><code><span class="n">ch_types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'eeg'</span><span class="p">]</span>
+<span class="n">data_type</span> <span class="o">=</span> <span class="s1">'eeg'</span>  <span class="c1"># or data_type = None</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.eeg_template_montage">
+
+        <code class="highlight">
+eeg_template_montage: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      </h2>
+<div class="doc doc-contents first">
+<p>In situations where you wish to process EEG data and no individual
+digitization points (measured channel locations) are available, you can apply
+a "template" montage. This means we will assume the EEG cap was placed
+either according to an international system like 10/20, or as suggested by
+the cap manufacturers in their respective manual.</p>
+<p>Please be aware that the actual cap placement most likely deviated somewhat
+from the template, and, therefore, source reconstruction may be impaired.</p>
+<p>If <code>None</code>, do not apply a template montage. If a string, must be the
+name of a built-in template montage in MNE-Python.
+You can find an overview of supported template montages at
+https://mne.tools/stable/generated/mne.channels.make_standard_montage.html</p>
+<details class="example" open="open"><summary>Example</summary><p>Do not apply template montage:
+<div class="highlight">
+<pre><span></span><code><span class="n">eeg_template_montage</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre>
+</div>
+</p>
+<p>Apply 64-channel Biosemi 10/20 template montage:
+<div class="highlight">
+<pre><span></span><code><span class="n">eeg_template_montage</span> <span class="o">=</span> <span class="s1">'biosemi64'</span>
+</code></pre>
+</div>
+</p>
+</details>
+</div>
+</div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+        
+          <a href="../../getting_started/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Getting Started
+              </div>
+            </div>
+          </a>
+        
+        
+          <a href="../continuous_data/autobads/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Bad channel detection
+              </div>
+            </div>
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      
+      <script>
+        app = initialize({
+          base: "../..",
+          features: [],
+          search: Object.assign({
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
+          }, typeof search !== "undefined" && search)
+        })
+      </script>
+      
+    
+  </body>
+</html>

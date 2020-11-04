@@ -245,10 +245,246 @@
       
 
 
-  <li class="md-nav__item">
-    <a href="../settings/" class="md-nav__link">
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
       Configuration Options
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Configuration Options" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        <span class="md-nav__icon md-icon"></span>
+        Configuration Options
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/basic/" class="md-nav__link">
+      Basic settings
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+    
+    <label class="md-nav__link" for="nav-4-2">
+      Continuous data
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Continuous data" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-2">
+        <span class="md-nav__icon md-icon"></span>
+        Continuous data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/continuous_data/autobads/" class="md-nav__link">
+      Bad channel detection
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/continuous_data/maxfilter/" class="md-nav__link">
+      Maxwell filter
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/continuous_data/stim_artifact/" class="md-nav__link">
+      Stimulation artifact
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4">
+    
+    <label class="md-nav__link" for="nav-4-2-4">
+      Frequency filtering & resampling
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Frequency filtering & resampling" data-md-level="3">
+      <label class="md-nav__title" for="nav-4-2-4">
+        <span class="md-nav__icon md-icon"></span>
+        Frequency filtering & resampling
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/continuous_data/filter/" class="md-nav__link">
+      Filtering
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/continuous_data/resample/" class="md-nav__link">
+      Resampling
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+    
+    <label class="md-nav__link" for="nav-4-3">
+      Epoched data
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Epoched data" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Epoched data
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/epoched_data/epochs/" class="md-nav__link">
+      Epoching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/epoched_data/artifacts/" class="md-nav__link">
+      Amplitude-based artifact removal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/epoched_data/ssp_ica/" class="md-nav__link">
+      SSP & ICA
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/epoched_data/statistics/" class="md-nav__link">
+      Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/epoched_data/time_freq/" class="md-nav__link">
+      Time-frequency analysis
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../settings/epoched_data/inverse/" class="md-nav__link">
+      Source estimation
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
     
@@ -313,8 +549,9 @@
 <p>First, you need to make sure you have MNE-Python installed and working on your
 system. See the <a href="https://mne.tools/stable/install/mne_python.html">installation instructions</a>.</p>
 <h2 id="2-install-additional-dependencies">2. Install additional dependencies</h2>
-<p>You will also need to install the following additional dependencies:</p>
-<ul>
+<p>You will also need to install the a number of additional dependencies that are
+required to run the Study Template.</p>
+<details class="info"><summary>List of dependencies</summary><ul>
 <li><code>mne-bids</code> to operate on BIDS data</li>
 <li><code>coloredlogs</code> for nicer logging output</li>
 <li><code>tqdm</code> for progress bars</li>
@@ -324,11 +561,11 @@ system. See the <a href="https://mne.tools/stable/install/mne_python.html">insta
 <li><code>fire</code> for the command line interface</li>
 <li><code>typing_extensions</code> if you're using a Python version older than 3.8</li>
 </ul>
-<p>You can install those packages via <code>pip</code>:</p>
-<details class="example"><summary>Python 3.8 and newer</summary><div class="highlight"><pre><span></span><code>pip install mne-bids coloredlogs tqdm pandas scikit-learn json_tricks fire
+</details>
+<details class="example"><summary>Install for Python 3.8 and newer</summary><div class="highlight"><pre><span></span><code>pip install mne-bids coloredlogs tqdm pandas scikit-learn json_tricks fire
 </code></pre></div>
 </details>
-<details class="example"><summary>Older Python versions</summary><div class="highlight"><pre><span></span><code>pip install mne-bids coloredlogs tqdm pandas json_tricks scikit-learn fire typing_extension
+<details class="example"><summary>Install for older Python versions</summary><div class="highlight"><pre><span></span><code>pip install mne-bids coloredlogs tqdm pandas json_tricks scikit-learn fire typing_extension
 </code></pre></div>
 </details>
 <h2 id="3-download-the-study-template">3. Download the Study Template</h2>
