@@ -6,21 +6,25 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="The MNE Study Template is a collection of scripts for automated processing of MEG and EEG data.">
       
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      
+        <meta name="author" content="MNE Study Template authors">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
     
     
       
-        <title>Time-frequency analysis - MNE Study Template</title>
+        <title>Filtering - MNE Study Template</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.19190aaf.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.19190aaf.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.24b84193.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.24b84193.min.css">
         
       
     
@@ -35,7 +39,7 @@
     
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="../../css/extra.css">
     
     
       
@@ -58,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.time_frequency_conditions" class="md-skip">
+        <a href="#config.l_freq" class="md-skip">
           Skip to content
         </a>
       
@@ -69,9 +73,11 @@
     
       
 
+  
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../../.." title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
+    <a href="../../index.html" title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -88,7 +94,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Time-frequency analysis
+              Filtering
             
           </span>
         </div>
@@ -126,6 +132,19 @@
 </div>
     
     
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/mne-tools/mne-study-template/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
   </nav>
 </header>
     
@@ -143,9 +162,11 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
+    <a href="../../index.html" title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -153,6 +174,19 @@
     </a>
     MNE Study Template
   </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/mne-tools/mne-study-template/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -162,7 +196,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." class="md-nav__link">
+    <a href="../../index.html" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -174,7 +208,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../install/" class="md-nav__link">
+    <a href="../../install.html" class="md-nav__link">
       Installation
     </a>
   </li>
@@ -186,7 +220,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../getting_started/" class="md-nav__link">
+    <a href="../../getting_started.html" class="md-nav__link">
       Getting Started
     </a>
   </li>
@@ -221,7 +255,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../basic/" class="md-nav__link">
+    <a href="../basic.html" class="md-nav__link">
       Basic settings
     </a>
   </li>
@@ -231,10 +265,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     
     <label class="md-nav__link" for="nav-4-2">
       Continuous data
@@ -254,7 +290,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/autobads/" class="md-nav__link">
+    <a href="autobads.html" class="md-nav__link">
       Bad channel detection
     </a>
   </li>
@@ -266,7 +302,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/maxfilter/" class="md-nav__link">
+    <a href="maxfilter.html" class="md-nav__link">
       Maxwell filter
     </a>
   </li>
@@ -278,7 +314,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/stim_artifact/" class="md-nav__link">
+    <a href="stim_artifact.html" class="md-nav__link">
       Stimulation artifact
     </a>
   </li>
@@ -288,10 +324,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4" checked>
     
     <label class="md-nav__link" for="nav-4-2-4">
       Frequency filtering & resampling
@@ -309,11 +347,52 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../continuous_data/filter/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Filtering
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="filter.html" class="md-nav__link md-nav__link--active">
       Filtering
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config.l_freq" class="md-nav__link">
+    l_freq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.h_freq" class="md-nav__link">
+    h_freq
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -323,7 +402,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/resample/" class="md-nav__link">
+    <a href="resample.html" class="md-nav__link">
       Resampling
     </a>
   </li>
@@ -343,12 +422,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
       Epoched data
@@ -368,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epochs/" class="md-nav__link">
+    <a href="../epoched_data/epochs.html" class="md-nav__link">
       Epoching
     </a>
   </li>
@@ -380,7 +457,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../artifacts/" class="md-nav__link">
+    <a href="../epoched_data/artifacts.html" class="md-nav__link">
       Amplitude-based artifact removal
     </a>
   </li>
@@ -392,7 +469,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ssp_ica/" class="md-nav__link">
+    <a href="../epoched_data/ssp_ica.html" class="md-nav__link">
       SSP & ICA
     </a>
   </li>
@@ -404,7 +481,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../statistics/" class="md-nav__link">
+    <a href="../epoched_data/statistics.html" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -414,45 +491,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Time-frequency analysis
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../epoched_data/time_freq.html" class="md-nav__link">
       Time-frequency analysis
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#config.time_frequency_conditions" class="md-nav__link">
-    time_frequency_conditions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -467,7 +510,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../inverse/" class="md-nav__link">
+    <a href="../epoched_data/inverse.html" class="md-nav__link">
       Source estimation
     </a>
   </li>
@@ -500,8 +543,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.time_frequency_conditions" class="md-nav__link">
-    time_frequency_conditions
+  <a href="#config.l_freq" class="md-nav__link">
+    l_freq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.h_freq" class="md-nav__link">
+    h_freq
   </a>
   
 </li>
@@ -518,24 +568,53 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/settings/continuous_data/filter.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
                 
-                  <h1>Time-frequency analysis</h1>
                 
-                <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.time_frequency_conditions">
+                  <h1>Filtering</h1>
+                
+                <p>It is typically better to set your filtering properties on the raw data so
+as to avoid what we call border (or edge) effects.</p>
+<p>If you use this pipeline for evoked responses, you could consider
+a low-pass filter cut-off of h_freq = 40 Hz
+and possibly a high-pass filter cut-off of l_freq = 1 Hz
+so you would preserve only the power in the 1Hz to 40 Hz band.
+Note that highpass filtering is not necessarily recommended as it can
+distort waveforms of evoked components, or simply wash out any low
+frequency that can may contain brain signal. It can also act as
+a replacement for baseline correction in Epochs. See below.</p>
+<p>If you use this pipeline for time-frequency analysis, a default filtering
+coult be a high-pass filter cut-off of l_freq = 1 Hz
+a low-pass filter cut-off of h_freq = 120 Hz
+so you would preserve only the power in the 1Hz to 120 Hz band.</p>
+<p>If you need more fancy analysis, you are already likely past this kind
+of tips! 😇</p>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.l_freq">
 
         <code class="highlight">
-time_frequency_conditions: <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+l_freq: <span class="nb">float</span>        </code>
 
 
-      </h2>
+      <a class="headerlink" href="#config.l_freq" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>The conditions to compute time-frequency decomposition on.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">time_frequency_conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'right'</span><span class="p">]</span>
-</code></pre>
+<p>The low-frequency cut-off in the highpass filtering step.
+Keep it None if no highpass filtering should be applied.</p>
 </div>
-</details>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.h_freq">
+
+        <code class="highlight">
+h_freq: <span class="nb">float</span>        </code>
+
+
+      <a class="headerlink" href="#config.h_freq" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The high-frequency cut-off in the lowpass filtering step.
+Keep it None if no lowpass filtering should be applied.</p>
 </div>
 </div>
                 
@@ -556,7 +635,7 @@ time_frequency_conditions: <span class="n">Iterable</span><span class="p">[</spa
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../statistics/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="stim_artifact.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -565,19 +644,19 @@ time_frequency_conditions: <span class="n">Iterable</span><span class="p">[</spa
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Statistics
+                Stimulation artifact
               </div>
             </div>
           </a>
         
         
-          <a href="../inverse/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="resample.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Source estimation
+                Resampling
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -604,15 +683,15 @@ time_frequency_conditions: <span class="n">Iterable</span><span class="p">[</spa
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "../../..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "../../assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

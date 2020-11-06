@@ -6,21 +6,25 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="The MNE Study Template is a collection of scripts for automated processing of MEG and EEG data.">
       
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      
+        <meta name="author" content="MNE Study Template authors">
+      
+      <link rel="shortcut icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
     
     
       
-        <title>Epoching - MNE Study Template</title>
+        <title>Installation - MNE Study Template</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.19190aaf.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.19190aaf.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.24b84193.min.css">
+        <link rel="stylesheet" href="assets/stylesheets/palette.24b84193.min.css">
         
       
     
@@ -35,7 +39,7 @@
     
     
     
-      <link rel="stylesheet" href="../../../css/extra.css">
+      <link rel="stylesheet" href="css/extra.css">
     
     
       
@@ -58,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.rename_events" class="md-skip">
+        <a href="#1-install-mne-python" class="md-skip">
           Skip to content
         </a>
       
@@ -69,9 +73,11 @@
     
       
 
+  
+
 <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../../.." title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
+    <a href="./index.html" title="MNE Study Template" class="md-header-nav__button md-logo" aria-label="MNE Study Template">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -88,7 +94,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Epoching
+              Installation
             
           </span>
         </div>
@@ -126,6 +132,19 @@
 </div>
     
     
+      <div class="md-header-nav__source">
+        
+<a href="https://github.com/mne-tools/mne-study-template/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
   </nav>
 </header>
     
@@ -143,9 +162,11 @@
                   <div class="md-sidebar__inner">
                     
 
+  
+
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
+    <a href="./index.html" title="MNE Study Template" class="md-nav__button md-logo" aria-label="MNE Study Template">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3 3 3 0 003 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -153,6 +174,19 @@
     </a>
     MNE Study Template
   </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://github.com/mne-tools/mne-study-template/" title="Go to repository" class="md-source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -162,32 +196,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../.." class="md-nav__link">
+    <a href="index.html" class="md-nav__link">
       Introduction
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../../install/" class="md-nav__link">
-      Installation
-    </a>
-  </li>
-
-    
-      
-      
-      
-
-
-  <li class="md-nav__item">
-    <a href="../../../getting_started/" class="md-nav__link">
-      Getting Started
     </a>
   </li>
 
@@ -199,9 +209,79 @@
   
 
 
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Installation
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="install.html" class="md-nav__link md-nav__link--active">
+      Installation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-install-mne-python" class="md-nav__link">
+    1. Install MNE-Python
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-install-additional-dependencies" class="md-nav__link">
+    2. Install additional dependencies
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-download-the-study-template" class="md-nav__link">
+    3. Download the Study Template
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="getting_started.html" class="md-nav__link">
+      Getting Started
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Configuration Options
@@ -221,7 +301,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../basic/" class="md-nav__link">
+    <a href="settings/basic.html" class="md-nav__link">
       Basic settings
     </a>
   </li>
@@ -254,7 +334,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/autobads/" class="md-nav__link">
+    <a href="settings/continuous_data/autobads.html" class="md-nav__link">
       Bad channel detection
     </a>
   </li>
@@ -266,7 +346,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/maxfilter/" class="md-nav__link">
+    <a href="settings/continuous_data/maxfilter.html" class="md-nav__link">
       Maxwell filter
     </a>
   </li>
@@ -278,7 +358,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/stim_artifact/" class="md-nav__link">
+    <a href="settings/continuous_data/stim_artifact.html" class="md-nav__link">
       Stimulation artifact
     </a>
   </li>
@@ -311,7 +391,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/filter/" class="md-nav__link">
+    <a href="settings/continuous_data/filter.html" class="md-nav__link">
       Filtering
     </a>
   </li>
@@ -323,7 +403,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../continuous_data/resample/" class="md-nav__link">
+    <a href="settings/continuous_data/resample.html" class="md-nav__link">
       Resampling
     </a>
   </li>
@@ -343,12 +423,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
       Epoched data
@@ -366,73 +444,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Epoching
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="settings/epoched_data/epochs.html" class="md-nav__link">
       Epoching
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#config.rename_events" class="md-nav__link">
-    rename_events
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.conditions" class="md-nav__link">
-    conditions
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.tmin" class="md-nav__link">
-    tmin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.tmax" class="md-nav__link">
-    tmax
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.baseline" class="md-nav__link">
-    baseline
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -442,7 +458,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../artifacts/" class="md-nav__link">
+    <a href="settings/epoched_data/artifacts.html" class="md-nav__link">
       Amplitude-based artifact removal
     </a>
   </li>
@@ -454,7 +470,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../ssp_ica/" class="md-nav__link">
+    <a href="settings/epoched_data/ssp_ica.html" class="md-nav__link">
       SSP & ICA
     </a>
   </li>
@@ -466,7 +482,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../statistics/" class="md-nav__link">
+    <a href="settings/epoched_data/statistics.html" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -478,7 +494,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../time_freq/" class="md-nav__link">
+    <a href="settings/epoched_data/time_freq.html" class="md-nav__link">
       Time-frequency analysis
     </a>
   </li>
@@ -495,7 +511,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../inverse/" class="md-nav__link">
+    <a href="settings/epoched_data/inverse.html" class="md-nav__link">
       Source estimation
     </a>
   </li>
@@ -528,36 +544,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.rename_events" class="md-nav__link">
-    rename_events
+  <a href="#1-install-mne-python" class="md-nav__link">
+    1. Install MNE-Python
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.conditions" class="md-nav__link">
-    conditions
+  <a href="#2-install-additional-dependencies" class="md-nav__link">
+    2. Install additional dependencies
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.tmin" class="md-nav__link">
-    tmin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.tmax" class="md-nav__link">
-    tmax
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.baseline" class="md-nav__link">
-    baseline
+  <a href="#3-download-the-study-template" class="md-nav__link">
+    3. Download the Study Template
   </a>
   
 </li>
@@ -574,108 +576,38 @@
             <article class="md-content__inner md-typeset">
               
                 
+                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/install.md" title="Edit this page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
                 
-                  <h1>Epoching</h1>
                 
-                <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.rename_events">
-
-        <code class="highlight">
-rename_events: <span class="nb">dict</span>        </code>
-
-
-      </h2>
-<div class="doc doc-contents first">
-<p>A dictionary specifying which events in the BIDS dataset to rename upon
-loading, and before processing begins.</p>
-<p>Pass an empty dictionary to not perform any renaming.</p>
-<details class="example" open="open"><summary>Example</summary><p>Rename <code>audio_left</code> in the BIDS dataset to <code>audio/left</code> in the
-pipeline:
-<div class="highlight">
-<pre><span></span><code><span class="n">rename_events</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'audio_left'</span><span class="p">:</span> <span class="s1">'audio/left'</span><span class="p">}</span>
-</code></pre>
-</div>
-</p>
+                  <h1>Installation</h1>
+                
+                <h2 id="1-install-mne-python">1. Install MNE-Python<a class="headerlink" href="#1-install-mne-python" title="Permanent link">&para;</a></h2>
+<p>First, you need to make sure you have MNE-Python installed and working on your
+system. See the <a href="https://mne.tools/stable/install/mne_python.html">installation instructions</a>.</p>
+<h2 id="2-install-additional-dependencies">2. Install additional dependencies<a class="headerlink" href="#2-install-additional-dependencies" title="Permanent link">&para;</a></h2>
+<p>You will also need to install the a number of additional dependencies that are
+required to run the Study Template.</p>
+<details class="info"><summary>List of dependencies</summary><ul>
+<li><code>mne-bids</code> to operate on BIDS data</li>
+<li><code>coloredlogs</code> for nicer logging output</li>
+<li><code>tqdm</code> for progress bars</li>
+<li><code>pandas</code> for table creation</li>
+<li><code>json_tricks</code> for handling of some analysis output</li>
+<li><code>scikit-learn</code> for decoding</li>
+<li><code>fire</code> for the command line interface</li>
+<li><code>typing_extensions</code> if you're using a Python version older than 3.8</li>
+</ul>
 </details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.conditions">
-
-        <code class="highlight">
-conditions: <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
-
-
-      </h2>
-<div class="doc doc-contents first">
-<p>The condition names to consider. This can either be name of the
-experimental condition as specified in the BIDS <code>events.tsv</code> file; or
-the name of condition <em>grouped</em>, if the condition names contain the
-(MNE-specific) group separator, <code>/</code>. See the <a href="https://mne.tools/stable/auto_tutorials/epochs/plot_10_epochs_overview.html#subselecting-epochs">Subselecting epochs
-tutorial</a>
-for more information.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'visual/left'</span><span class="p">]</span>
-<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'auditory/right'</span><span class="p">]</span>
-<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory'</span><span class="p">]</span>  <span class="c1"># All "auditory" conditions (left AND right)</span>
-<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory'</span><span class="p">,</span> <span class="s1">'visual'</span><span class="p">]</span>
-<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'right'</span><span class="p">]</span>
-</code></pre>
-</div>
+<details class="example"><summary>Install for Python 3.8 and newer</summary><div class="highlight"><pre><span></span><code>pip install mne-bids coloredlogs tqdm pandas scikit-learn json_tricks fire
+</code></pre></div>
 </details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.tmin">
-
-        <code class="highlight">
-tmin        </code>
-
-
-      </h2>
-<div class="doc doc-contents first">
-<p>The beginning of an epoch, relative to the respective event, in seconds.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">tmin</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.2</span>  <span class="c1"># take 200ms before event onset.</span>
-</code></pre>
-</div>
+<details class="example"><summary>Install for older Python versions</summary><div class="highlight"><pre><span></span><code>pip install mne-bids coloredlogs tqdm pandas json_tricks scikit-learn fire typing_extension
+</code></pre></div>
 </details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.tmax">
-
-        <code class="highlight">
-tmax: <span class="nb">float</span>        </code>
-
-
-      </h2>
-<div class="doc doc-contents first">
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">tmax</span> <span class="o">=</span> <span class="mf">0.5</span>  <span class="c1"># take 500ms after event onset.</span>
-</code></pre>
-</div>
-</details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.baseline">
-
-        <code class="highlight">
-baseline: <span class="n">Optional</span><span class="p">[</span><span class="nb">tuple</span><span class="p">]</span>        </code>
-
-
-      </h2>
-<div class="doc doc-contents first">
-<p>Specifies how to baseline-correct the epochs; if <code>None</code>, no baseline
-correction is applied.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">baseline</span> <span class="o">=</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># baseline between tmin and 0</span>
-</code></pre>
-</div>
-</details>
-</div>
-</div>
+<h2 id="3-download-the-study-template">3. Download the Study Template<a class="headerlink" href="#3-download-the-study-template" title="Permanent link">&para;</a></h2>
+<p>TODO</p>
                 
               
               
@@ -694,7 +626,7 @@ correction is applied.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../continuous_data/resample/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="index.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -703,19 +635,19 @@ correction is applied.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Resampling
+                Introduction
               </div>
             </div>
           </a>
         
         
-          <a href="../artifacts/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="getting_started.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Amplitude-based artifact removal
+                Getting Started
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -742,15 +674,15 @@ correction is applied.</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "../../..",
+          base: ".",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.4ac00218.min.js"
+            worker: "assets/javascripts/worker/search.4ac00218.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
