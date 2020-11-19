@@ -479,6 +479,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config.mf_cal_fname" class="md-nav__link">
+    mf_cal_fname
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.mf_ctc_fname" class="md-nav__link">
+    mf_ctc_fname
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#config.mf_st_duration" class="md-nav__link">
     mf_st_duration
   </a>
@@ -703,6 +717,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config.mf_cal_fname" class="md-nav__link">
+    mf_cal_fname
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.mf_ctc_fname" class="md-nav__link">
+    mf_ctc_fname
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#config.mf_st_duration" class="md-nav__link">
     mf_st_duration
   </a>
@@ -760,6 +788,60 @@ Bad channels need to be set through BIDS channels.tsv and / or via the
 <code>find_flat_channels_meg</code> and <code>find_noisy_channels_meg</code> options above
 before applying Maxwell filter.</p>
 </div>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.mf_cal_fname">
+
+        <code class="highlight">
+mf_cal_fname: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      <a class="headerlink" href="#config.mf_cal_fname" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This parameter will soon be removed!
+ Please store the fine-calibration file
+ <a href="https://bids-specification.readthedocs.io/en/stable/99-appendices/06-meg-file-formats.html#cross-talk-and-fine-calibration-files">according to BIDS</a>,
+ e.g. using MNE-BIDS's
+ <a href="https://mne.tools/mne-bids/stable/generated/mne_bids.write_meg_calibration.html"><code>write_meg_calibration</code></a>
+ function.</p>
+</div>
+<p>Path to the Maxwell Filter calibration file. If None the recommended
+location is used.</p>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">mf_cal_fname</span> <span class="o">=</span> <span class="s1">'/path/to/your/file/calibration_cal.dat'</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.mf_ctc_fname">
+
+        <code class="highlight">
+mf_ctc_fname: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      <a class="headerlink" href="#config.mf_ctc_fname" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>Path to the Maxwell Filter cross-talk file. If None the recommended
+location is used.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This parameter will soon be removed!
+ Please store the fine-calibration file
+ <a href="https://bids-specification.readthedocs.io/en/stable/99-appendices/06-meg-file-formats.html#cross-talk-and-fine-calibration-files">according to BIDS</a>,
+ e.g. using MNE-BIDS's
+ <a href="https://mne.tools/mne-bids/stable/generated/mne_bids.write_meg_crosstalk.html"><code>write_meg_crosstalk</code></a>
+ function.</p>
+</div>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">mf_ctc_fname</span> <span class="o">=</span> <span class="s1">'/path/to/your/file/crosstalk_ct.fif'</span>
+</code></pre>
+</div>
+</details>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
