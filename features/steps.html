@@ -321,9 +321,59 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        List of processing steps
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
     <a href="steps.html" class="md-nav__link md-nav__link--active">
       List of processing steps
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preprocessing" class="md-nav__link">
+    Preprocessing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-level-analysis" class="md-nav__link">
+    Sensor-level analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-level-analysis" class="md-nav__link">
+    Source-level analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-reports" class="md-nav__link">
+    Analysis reports
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -643,6 +693,42 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preprocessing" class="md-nav__link">
+    Preprocessing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-level-analysis" class="md-nav__link">
+    Sensor-level analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-level-analysis" class="md-nav__link">
+    Source-level analysis
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analysis-reports" class="md-nav__link">
+    Analysis reports
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -661,76 +747,126 @@
                 <h1 id="processing-steps">Processing steps<a class="headerlink" href="#processing-steps" title="Permanent link">&para;</a></h1>
 <p>The following table provides a concise summary of each step in the Study
 Template. You can find the scripts in the <code>scripts</code> directory.</p>
+<h2 id="preprocessing">Preprocessing<a class="headerlink" href="#preprocessing" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th align="left">Script</th>
+<th align="left">Processing step</th>
 <th align="left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>01-import_and_maxfilter.py</code></td>
+<td align="left"><code>preprocessing</code></td>
+<td align="left">Run all preprocessing scripts.</td>
+</tr>
+<tr>
+<td align="left"><code>preprocessing/import_and_maxfilter</code></td>
 <td align="left">Import raw data and apply Maxwell filter.</td>
 </tr>
 <tr>
-<td align="left"><code>02-frequency_filter.py</code></td>
+<td align="left"><code>preprocessing/frequency_filter</code></td>
 <td align="left">Apply low- and high-pass filters.</td>
 </tr>
 <tr>
-<td align="left"><code>03-make_epochs.py</code></td>
+<td align="left"><code>preprocessing/make_epochs</code></td>
 <td align="left">Extract epochs.</td>
 </tr>
 <tr>
-<td align="left"><code>04a-run_ica.py</code></td>
+<td align="left"><code>preprocessing/run_ica</code></td>
 <td align="left">Run Independant Component Analysis (ICA) for artifact correction.</td>
 </tr>
 <tr>
-<td align="left"><code>04b-run_ssp.py</code></td>
+<td align="left"><code>preprocessing/run_ssp</code></td>
 <td align="left">Run Signal Subspace Projections (SSP) for artifact correction. These are often also referred to as PCA vectors.</td>
 </tr>
 <tr>
-<td align="left"><code>05a-apply_ica.py</code></td>
-<td align="left">As an alternative to ICA, you can use SSP projections to correct for eye blink and heart beat artifacts. Use either 5a/6a, or 5b/6b.</td>
+<td align="left"><code>preprocessing/apply_ica</code></td>
+<td align="left">As an alternative to ICA, you can use SSP projections to correct for eye blink and heart beat artifacts.</td>
 </tr>
 <tr>
-<td align="left"><code>05b-apply_ssp.py</code></td>
+<td align="left"><code>preprocessing/apply_ssp</code></td>
 <td align="left">Apply SSP projections and obtain the cleaned epochs.</td>
 </tr>
+</tbody>
+</table>
+<h2 id="sensor-level-analysis">Sensor-level analysis<a class="headerlink" href="#sensor-level-analysis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
 <tr>
-<td align="left"><code>06-make_evoked.py</code></td>
+<th align="left">Processing step</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>sensor</code></td>
+<td align="left">Run all sensor-level analysis scripts.</td>
+</tr>
+<tr>
+<td align="left"><code>sensor/make_evoked</code></td>
 <td align="left">Extract evoked data for each condition.</td>
 </tr>
 <tr>
-<td align="left"><code>07-sliding_estimator.py</code></td>
+<td align="left"><code>sensor/sliding_estimator</code></td>
 <td align="left">Running a time-by-time decoder with sliding window.</td>
 </tr>
 <tr>
-<td align="left"><code>08-time_frequency.py</code></td>
+<td align="left"><code>sensor/time_frequency</code></td>
 <td align="left">Running a time-frequency analysis.</td>
 </tr>
 <tr>
-<td align="left"><code>09-group_average_sensors.py</code></td>
+<td align="left"><code>sensor/group_average_sensors</code></td>
 <td align="left">Make a group average of the time domain data.</td>
 </tr>
+</tbody>
+</table>
+<h2 id="source-level-analysis">Source-level analysis<a class="headerlink" href="#source-level-analysis" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
 <tr>
-<td align="left"><code>10-make_forward.py</code></td>
+<th align="left">Processing step</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>source</code></td>
+<td align="left">Run all source-level analysis scripts.</td>
+</tr>
+<tr>
+<td align="left"><code>source/make_forward</code></td>
 <td align="left">Compute forward operators. You will need to have computed the coregistration to obtain the <code>-trans.fif</code> files for each subject.</td>
 </tr>
 <tr>
-<td align="left"><code>11-make_cov.py</code></td>
+<td align="left"><code>source/make_cov</code></td>
 <td align="left">Compute noise covariances for each subject.</td>
 </tr>
 <tr>
-<td align="left"><code>12-make_inverse.py</code></td>
-<td align="left">Compute inverse problem to obtain source estimates.</td>
+<td align="left"><code>source/make_inverse</code></td>
+<td align="left">Compute inverse solution to obtain source estimates.</td>
 </tr>
 <tr>
-<td align="left"><code>13-group_average_source.py</code></td>
+<td align="left"><code>source/group_average</code></td>
 <td align="left">Compute source estimates average over subjects.</td>
 </tr>
+</tbody>
+</table>
+<h2 id="analysis-reports">Analysis reports<a class="headerlink" href="#analysis-reports" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
 <tr>
-<td align="left"><code>99-make_reports.py</code></td>
+<th align="left">Processing step</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>report</code></td>
+<td align="left">Run all report-generating scripts (currently only one).</td>
+</tr>
+<tr>
+<td align="left"><code>report/make_reports.py</code></td>
 <td align="left">Compute HTML reports for each subject.</td>
 </tr>
 </tbody>
