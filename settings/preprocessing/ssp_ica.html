@@ -18,7 +18,7 @@
     
     
       
-        <title>Statistics - MNE Study Template</title>
+        <title>SSP & ICA - MNE Study Template</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.contrasts" class="md-skip">
+        <a href="#config.use_ssp" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Statistics
+              SSP & ICA
             
           </span>
         </div>
@@ -213,7 +213,7 @@
       
         
       
-      <a href="../basic.html" class="md-tabs__link md-tabs__link--active">
+      <a href="../general.html" class="md-tabs__link md-tabs__link--active">
         Configuration Options
       </a>
     </li>
@@ -399,8 +399,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../basic.html" class="md-nav__link">
-      Basic settings
+    <a href="../general.html" class="md-nav__link">
+      General settings
     </a>
   </li>
 
@@ -409,18 +409,20 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" >
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     <label class="md-nav__link" for="nav-4-2">
-      Continuous data
+      Preprocessing
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Continuous data" data-md-level="2">
+    <nav class="md-nav" aria-label="Preprocessing" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
         <span class="md-nav__icon md-icon"></span>
-        Continuous data
+        Preprocessing
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -431,7 +433,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/autobads.html" class="md-nav__link">
+    <a href="autobads.html" class="md-nav__link">
       Bad channel detection
     </a>
   </li>
@@ -443,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/maxfilter.html" class="md-nav__link">
+    <a href="maxfilter.html" class="md-nav__link">
       Maxwell filter
     </a>
   </li>
@@ -455,7 +457,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/stim_artifact.html" class="md-nav__link">
+    <a href="stim_artifact.html" class="md-nav__link">
       Stimulation artifact
     </a>
   </li>
@@ -487,7 +489,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/filter.html" class="md-nav__link">
+    <a href="filter.html" class="md-nav__link">
       Filtering
     </a>
   </li>
@@ -499,7 +501,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/resample.html" class="md-nav__link">
+    <a href="resample.html" class="md-nav__link">
       Resampling
     </a>
   </li>
@@ -509,33 +511,6 @@
     </nav>
   </li>
 
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-          
-          
-          
-
-  
-
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
-    <label class="md-nav__link" for="nav-4-3">
-      Epoched data
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Epoched data" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
-        <span class="md-nav__icon md-icon"></span>
-        Epoched data
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
         
           
           
@@ -565,18 +540,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="ssp_ica.html" class="md-nav__link">
-      SSP & ICA
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -586,12 +549,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Statistics
+        SSP & ICA
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="statistics.html" class="md-nav__link md-nav__link--active">
-      Statistics
+    <a href="ssp_ica.html" class="md-nav__link md-nav__link--active">
+      SSP & ICA
     </a>
     
       
@@ -606,36 +569,64 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.contrasts" class="md-nav__link">
-    contrasts
+  <a href="#config.use_ssp" class="md-nav__link">
+    use_ssp
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.decode" class="md-nav__link">
-    decode
+  <a href="#config.use_ica" class="md-nav__link">
+    use_ica
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.decoding_metric" class="md-nav__link">
-    decoding_metric
+  <a href="#config.ica_algorithm" class="md-nav__link">
+    ica_algorithm
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.decoding_n_splits" class="md-nav__link">
-    decoding_n_splits
+  <a href="#config.ica_l_freq" class="md-nav__link">
+    ica_l_freq
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.n_boot" class="md-nav__link">
-    n_boot
+  <a href="#config.ica_max_iterations" class="md-nav__link">
+    ica_max_iterations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_n_components" class="md-nav__link">
+    ica_n_components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_decim" class="md-nav__link">
+    ica_decim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_ctps_ecg_threshold" class="md-nav__link">
+    ica_ctps_ecg_threshold
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_eog_threshold" class="md-nav__link">
+    ica_eog_threshold
   </a>
   
 </li>
@@ -647,13 +638,50 @@
   </li>
 
         
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" >
+    <label class="md-nav__link" for="nav-4-3">
+      Sensor-level analysis
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Sensor-level analysis" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-3">
+        <span class="md-nav__icon md-icon"></span>
+        Sensor-level analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
           
           
           
 
 
   <li class="md-nav__item">
-    <a href="time_freq.html" class="md-nav__link">
+    <a href="../sensor/statistics.html" class="md-nav__link">
+      Statistics
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sensor/time_freq.html" class="md-nav__link">
       Time-frequency analysis
     </a>
   </li>
@@ -670,8 +698,8 @@
 
 
   <li class="md-nav__item">
-    <a href="inverse.html" class="md-nav__link">
-      Source estimation
+    <a href="../source/inverse.html" class="md-nav__link">
+      Source-level analysis
     </a>
   </li>
 
@@ -703,36 +731,64 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.contrasts" class="md-nav__link">
-    contrasts
+  <a href="#config.use_ssp" class="md-nav__link">
+    use_ssp
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.decode" class="md-nav__link">
-    decode
+  <a href="#config.use_ica" class="md-nav__link">
+    use_ica
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.decoding_metric" class="md-nav__link">
-    decoding_metric
+  <a href="#config.ica_algorithm" class="md-nav__link">
+    ica_algorithm
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.decoding_n_splits" class="md-nav__link">
-    decoding_n_splits
+  <a href="#config.ica_l_freq" class="md-nav__link">
+    ica_l_freq
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.n_boot" class="md-nav__link">
-    n_boot
+  <a href="#config.ica_max_iterations" class="md-nav__link">
+    ica_max_iterations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_n_components" class="md-nav__link">
+    ica_n_components
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_decim" class="md-nav__link">
+    ica_decim
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_ctps_ecg_threshold" class="md-nav__link">
+    ica_ctps_ecg_threshold
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.ica_eog_threshold" class="md-nav__link">
+    ica_eog_threshold
   </a>
   
 </li>
@@ -749,98 +805,156 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/epoched_data/statistics.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/preprocessing/ssp_ica.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Statistics</h1>
+                  <h1>SSP & ICA</h1>
                 
                 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.contrasts">
+<h2 class="doc doc-heading" id="config.use_ssp">
 
         <code class="highlight">
-contrasts: <span class="n">Iterable</span><span class="p">[</span><span class="nb">tuple</span><span class="p">]</span>        </code>
+use_ssp: <span class="nb">bool</span>        </code>
 
 
-      <a class="headerlink" href="#config.contrasts" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.use_ssp" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>The conditions to contrast via a subtraction of ERPs / ERFs. Each tuple
-in the list corresponds to one contrast. The condition names must be
-specified in <code>conditions</code> above. Pass an empty list to avoid calculation
-of contrasts.</p>
-<details class="example" open="open"><summary>Example</summary><p>Contrast the "left" and the "right" conditions by calculating
-<code>left - right</code> at every time point of the evoked responses:
-<div class="highlight">
-<pre><span></span><code><span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'right'</span><span class="p">]</span>
-<span class="n">contrasts</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'right'</span><span class="p">)]</span>  <span class="c1"># Note we pass a tuple inside the list!</span>
-</code></pre>
-</div>
-</p>
-<p>Contrast the "left" and the "right" conditions within the "auditory" and
-the "visual" modality, and "auditory" vs "visual" regardless of side:
-<div class="highlight">
-<pre><span></span><code><span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'auditory/right'</span><span class="p">,</span>
-              <span class="s1">'visual/left'</span><span class="p">,</span> <span class="s1">'visual/right'</span><span class="p">]</span>
-<span class="n">contrasts</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'auditory/right'</span><span class="p">),</span>
-             <span class="p">(</span><span class="s1">'visual/left'</span><span class="p">,</span> <span class="s1">'visual/right'</span><span class="p">),</span>
-             <span class="p">(</span><span class="s1">'auditory'</span><span class="p">,</span> <span class="s1">'visual'</span><span class="p">)]</span>
-</code></pre>
-</div>
-</p>
-</details>
+<p>Whether signal-space projection should be used or not.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.decode">
+<h2 class="doc doc-heading" id="config.use_ica">
 
         <code class="highlight">
-decode: <span class="nb">bool</span>        </code>
+use_ica: <span class="nb">bool</span>        </code>
 
 
-      <a class="headerlink" href="#config.decode" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.use_ica" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>Whether to perform decoding (MVPA) on the contrasts specified above as
-"contrasts". MVPA will be performed on the level of individual epochs.</p>
+<p>Whether independent component analysis should be used or not.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.decoding_metric">
+<h2 class="doc doc-heading" id="config.ica_algorithm">
 
         <code class="highlight">
-decoding_metric: <span class="nb">str</span>        </code>
+ica_algorithm: <span class="n">Literal</span><span class="p">[</span><span class="s1">'picard'</span><span class="p">,</span> <span class="s1">'fastica'</span><span class="p">,</span> <span class="s1">'extended_infomax'</span><span class="p">]</span>        </code>
 
 
-      <a class="headerlink" href="#config.decoding_metric" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.ica_algorithm" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>The metric to use for cross-validation. It can be <code>'roc_auc'</code> or <code>'accuracy'</code>
-or any other metric supported by <code>scikit-learn</code>.</p>
-<p>With AUC, chance level is the same regardless of class balance.</p>
+<p>The ICA algorithm to use.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.decoding_n_splits">
+<h2 class="doc doc-heading" id="config.ica_l_freq">
 
         <code class="highlight">
-decoding_n_splits: <span class="nb">int</span>        </code>
+ica_l_freq: <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>        </code>
 
 
-      <a class="headerlink" href="#config.decoding_n_splits" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.ica_l_freq" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>The number of folds (a.k.a. splits) to use in the cross-validation.</p>
+<p>The cutoff frequency of the high-pass filter to apply before running ICA.
+Using a relatively high cutoff like 1 Hz will remove slow drifts from the
+data, yielding improved ICA results.</p>
+<p>Set to <code>None</code> to not apply an additional high-pass filter.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The filter will be applied to raw data which was already filtered
+  according to the <code>l_freq</code> and <code>h_freq</code> settings. After filtering, the
+  data will be epoched, and the epochs will be submitted to ICA.</p>
+</div>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.n_boot">
+<h2 class="doc doc-heading" id="config.ica_max_iterations">
 
         <code class="highlight">
-n_boot: <span class="nb">int</span>        </code>
+ica_max_iterations: <span class="nb">int</span>        </code>
 
 
-      <a class="headerlink" href="#config.n_boot" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.ica_max_iterations" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>The number of bootstrap resamples when estimating the standard error and
-confidence interval of the mean decoding score.</p>
+<p>Maximum number of iterations to decompose the data into independent
+components. A low number means to finish earlier, but the consequence is
+that the algorithm may not have finished converging. To ensure
+convergence, pick a high number here (e.g. 3000); yet the algorithm will
+terminate as soon as it determines that is has successfully converged, and
+not necessarily exhaust the maximum number of iterations. Note that the
+default of 200 seems to be sufficient for Picard in many datasets, because
+it converges quicker than the other algorithms; but e.g. for FastICA, this
+limit may be too low to achieve convergence.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_n_components">
+
+        <code class="highlight">
+ica_n_components: <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">int</span><span class="p">]</span>        </code>
+
+
+      <a class="headerlink" href="#config.ica_n_components" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>MNE conducts ICA as a sort of a two-step procedure: First, a PCA is run
+on the data (trying to exclude zero-valued components in rank-deficient
+data); and in the second step, the principal componenets are passed
+to the actual ICA. You can select how many of the total principal
+components to pass to ICA – it can be all or just a subset. This determines
+how many independent components to fit, and can be controlled via this
+setting.</p>
+<p>If int, specifies the number of principal components that are passed to the
+ICA algorithm, which will be the number of independent components to
+fit. It must not be greater than the rank of your data (which is typically
+the number of channels, but may be less in some cases).</p>
+<p>If float between 0 and 1, all principal components with cumulative
+explained variance less than the value specified here will be passed to
+ICA.</p>
+<p>If <code>None</code>, <strong>all</strong> principal components will be used.</p>
+<p>This setting may drastically alter the time required to compute ICA.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_decim">
+
+        <code class="highlight">
+ica_decim: <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>        </code>
+
+
+      <a class="headerlink" href="#config.ica_decim" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The decimation parameter to compute ICA. If 5 it means
+that 1 every 5 sample is used by ICA solver. The higher the faster
+it is to run but the less data you have to compute a good ICA. Set to
+<code>1</code> or <code>None</code> to not perform any decimation.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_ctps_ecg_threshold">
+
+        <code class="highlight">
+ica_ctps_ecg_threshold: <span class="nb">float</span>        </code>
+
+
+      <a class="headerlink" href="#config.ica_ctps_ecg_threshold" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The threshold parameter passed to <code>find_bads_ecg</code> method.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.ica_eog_threshold">
+
+        <code class="highlight">
+ica_eog_threshold: <span class="nb">float</span>        </code>
+
+
+      <a class="headerlink" href="#config.ica_eog_threshold" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The threshold to use during automated EOG classification. Lower values mean
+that more ICs will be identified as EOG-related. If too low, the
+false-alarm rate increases dramatically.</p>
 </div>
 </div>
                 
@@ -861,7 +975,7 @@ confidence interval of the mean decoding score.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="ssp_ica.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="artifacts.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -870,19 +984,19 @@ confidence interval of the mean decoding score.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                SSP & ICA
+                Amplitude-based artifact removal
               </div>
             </div>
           </a>
         
         
-          <a href="time_freq.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../sensor/statistics.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Time-frequency analysis
+                Statistics
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

@@ -18,7 +18,7 @@
     
     
       
-        <title>Maxwell filter - MNE Study Template</title>
+        <title>Bad channel detection - MNE Study Template</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.use_maxwell_filter" class="md-skip">
+        <a href="#config.find_flat_channels_meg" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Maxwell filter
+              Bad channel detection
             
           </span>
         </div>
@@ -213,7 +213,7 @@
       
         
       
-      <a href="../basic.html" class="md-tabs__link md-tabs__link--active">
+      <a href="../general.html" class="md-tabs__link md-tabs__link--active">
         Configuration Options
       </a>
     </li>
@@ -399,8 +399,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../basic.html" class="md-nav__link">
-      Basic settings
+    <a href="../general.html" class="md-nav__link">
+      General settings
     </a>
   </li>
 
@@ -416,28 +416,16 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     <label class="md-nav__link" for="nav-4-2">
-      Continuous data
+      Preprocessing
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Continuous data" data-md-level="2">
+    <nav class="md-nav" aria-label="Preprocessing" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
         <span class="md-nav__icon md-icon"></span>
-        Continuous data
+        Preprocessing
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="autobads.html" class="md-nav__link">
-      Bad channel detection
-    </a>
-  </li>
-
         
           
           
@@ -452,12 +440,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Maxwell filter
+        Bad channel detection
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="maxfilter.html" class="md-nav__link md-nav__link--active">
-      Maxwell filter
+    <a href="autobads.html" class="md-nav__link md-nav__link--active">
+      Bad channel detection
     </a>
     
       
@@ -472,43 +460,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.use_maxwell_filter" class="md-nav__link">
-    use_maxwell_filter
+  <a href="#config.find_flat_channels_meg" class="md-nav__link">
+    find_flat_channels_meg
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.mf_cal_fname" class="md-nav__link">
-    mf_cal_fname
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mf_ctc_fname" class="md-nav__link">
-    mf_ctc_fname
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mf_st_duration" class="md-nav__link">
-    mf_st_duration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mf_head_origin" class="md-nav__link">
-    mf_head_origin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mf_reference_run" class="md-nav__link">
-    mf_reference_run
+  <a href="#config.find_noisy_channels_meg" class="md-nav__link">
+    find_noisy_channels_meg
   </a>
   
 </li>
@@ -517,6 +477,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="maxfilter.html" class="md-nav__link">
+      Maxwell filter
+    </a>
   </li>
 
         
@@ -581,6 +553,42 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="epochs.html" class="md-nav__link">
+      Epoching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="artifacts.html" class="md-nav__link">
+      Amplitude-based artifact removal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ssp_ica.html" class="md-nav__link">
+      SSP & ICA
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -595,13 +603,13 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" >
     <label class="md-nav__link" for="nav-4-3">
-      Epoched data
+      Sensor-level analysis
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Epoched data" data-md-level="2">
+    <nav class="md-nav" aria-label="Sensor-level analysis" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
         <span class="md-nav__icon md-icon"></span>
-        Epoched data
+        Sensor-level analysis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -612,43 +620,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/epochs.html" class="md-nav__link">
-      Epoching
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/artifacts.html" class="md-nav__link">
-      Amplitude-based artifact removal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/ssp_ica.html" class="md-nav__link">
-      SSP & ICA
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/statistics.html" class="md-nav__link">
+    <a href="../sensor/statistics.html" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -660,7 +632,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/time_freq.html" class="md-nav__link">
+    <a href="../sensor/time_freq.html" class="md-nav__link">
       Time-frequency analysis
     </a>
   </li>
@@ -677,8 +649,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/inverse.html" class="md-nav__link">
-      Source estimation
+    <a href="../source/inverse.html" class="md-nav__link">
+      Source-level analysis
     </a>
   </li>
 
@@ -710,43 +682,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.use_maxwell_filter" class="md-nav__link">
-    use_maxwell_filter
+  <a href="#config.find_flat_channels_meg" class="md-nav__link">
+    find_flat_channels_meg
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.mf_cal_fname" class="md-nav__link">
-    mf_cal_fname
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mf_ctc_fname" class="md-nav__link">
-    mf_ctc_fname
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mf_st_duration" class="md-nav__link">
-    mf_st_duration
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mf_head_origin" class="md-nav__link">
-    mf_head_origin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mf_reference_run" class="md-nav__link">
-    mf_reference_run
+  <a href="#config.find_noisy_channels_meg" class="md-nav__link">
+    find_noisy_channels_meg
   </a>
   
 </li>
@@ -763,166 +707,51 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/continuous_data/maxfilter.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/preprocessing/autobads.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Maxwell filter</h1>
+                  <h1>Bad channel detection</h1>
                 
-                <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.use_maxwell_filter">
-
-        <code class="highlight">
-use_maxwell_filter: <span class="nb">bool</span>        </code>
-
-
-      <a class="headerlink" href="#config.use_maxwell_filter" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>Whether or not to use Maxwell filtering to preprocess the data.</p>
-<div class="admonition warning">
+                <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>If the data were recorded with internal active compensation (MaxShield),
-they need to be run through Maxwell filter to avoid distortions.
-Bad channels need to be set through BIDS channels.tsv and / or via the
-<code>find_flat_channels_meg</code> and <code>find_noisy_channels_meg</code> options above
-before applying Maxwell filter.</p>
+<p>This functionality will soon be removed from the Study Template, and
+will be integrated into MNE-BIDS.</p>
 </div>
+<p>"Bad", i.e. flat and overly noisy channels, can be automatically detected
+using a procedure inspired by the commercial MaxFilter by Elekta. First,
+a copy of the data is low-pass filtered at 40 Hz. Then, channels with
+unusually low variability are flagged as "flat", while channels with
+excessively high variability are flagged as "noisy". Flat and noisy channels
+are marked as "bad" and excluded from subsequent analysis. See
+:func:<code>mne.preprocssessing.find_bad_channels_maxwell</code> for more information
+on this procedure. The list of bad channels detected through this procedure
+will be merged with the list of bad channels already present in the dataset,
+if any.</p>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.find_flat_channels_meg">
+
+        <code class="highlight">
+find_flat_channels_meg: <span class="nb">bool</span>        </code>
+
+
+      <a class="headerlink" href="#config.find_flat_channels_meg" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>Auto-detect "flat" channels (i.e. those with unusually low variability) and
+mark them as bad.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.mf_cal_fname">
+<h2 class="doc doc-heading" id="config.find_noisy_channels_meg">
 
         <code class="highlight">
-mf_cal_fname: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+find_noisy_channels_meg: <span class="nb">bool</span>        </code>
 
 
-      <a class="headerlink" href="#config.mf_cal_fname" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.find_noisy_channels_meg" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This parameter will soon be removed!
- Please store the fine-calibration file
- <a href="https://bids-specification.readthedocs.io/en/stable/99-appendices/06-meg-file-formats.html#cross-talk-and-fine-calibration-files">according to BIDS</a>,
- e.g. using MNE-BIDS's
- <a href="https://mne.tools/mne-bids/stable/generated/mne_bids.write_meg_calibration.html"><code>write_meg_calibration</code></a>
- function.</p>
-</div>
-<p>Path to the Maxwell Filter calibration file. If None the recommended
-location is used.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">mf_cal_fname</span> <span class="o">=</span> <span class="s1">'/path/to/your/file/calibration_cal.dat'</span>
-</code></pre>
-</div>
-</details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.mf_ctc_fname">
-
-        <code class="highlight">
-mf_ctc_fname: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
-
-
-      <a class="headerlink" href="#config.mf_ctc_fname" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>Path to the Maxwell Filter cross-talk file. If None the recommended
-location is used.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This parameter will soon be removed!
- Please store the fine-calibration file
- <a href="https://bids-specification.readthedocs.io/en/stable/99-appendices/06-meg-file-formats.html#cross-talk-and-fine-calibration-files">according to BIDS</a>,
- e.g. using MNE-BIDS's
- <a href="https://mne.tools/mne-bids/stable/generated/mne_bids.write_meg_crosstalk.html"><code>write_meg_crosstalk</code></a>
- function.</p>
-</div>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">mf_ctc_fname</span> <span class="o">=</span> <span class="s1">'/path/to/your/file/crosstalk_ct.fif'</span>
-</code></pre>
-</div>
-</details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.mf_st_duration">
-
-        <code class="highlight">
-mf_st_duration: <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>        </code>
-
-
-      <a class="headerlink" href="#config.mf_st_duration" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>There are two kinds of maxfiltering: SSS (signal space separation) and tSSS
-(temporal signal space separation)
-(see <a href="http://cds.cern.ch/record/709081/files/0401166.pdf">Taulu et al., 2004</a>).</p>
-<p>If not None, apply spatiotemporal SSS (tSSS) with specified buffer
-duration (in seconds). MaxFilter™'s default is 10.0 seconds in v2.2.
-Spatiotemporal SSS acts as implicitly as a high-pass filter where the
-cut-off frequency is 1/st_dur Hz. For this (and other) reasons, longer
-buffers are generally better as long as your system can handle the
-higher memory usage. To ensure that each window is processed
-identically, choose a buffer length that divides evenly into your data.
-Any data at the trailing edge that doesn't fit evenly into a whole
-buffer window will be lumped into the previous buffer.</p>
-<details class="info" open="open"><summary>Good Practice / Advice</summary><p>If you are interested in low frequency activity (&lt;0.1Hz), avoid using
-tSSS and set <code>mf_st_duration</code> to <code>None</code>.</p>
-<p>If you are interested in low frequency above 0.1 Hz, you can use the
-default <code>mf_st_duration</code> to 10 s, meaning it acts like a 0.1 Hz
-high-pass filter.</p>
-</details>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">mf_st_duration</span> <span class="o">=</span> <span class="kc">None</span>
-<span class="n">mf_st_duration</span> <span class="o">=</span> <span class="mf">10.</span>  <span class="c1"># to apply tSSS with 0.1Hz highpass filter.</span>
-</code></pre>
-</div>
-</details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.mf_head_origin">
-
-        <code class="highlight">
-mf_head_origin        </code>
-
-
-      <a class="headerlink" href="#config.mf_head_origin" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p><code>mf_head_origin</code> : array-like, shape (3,) | 'auto'
-Origin of internal and external multipolar moment space in meters.
-If 'auto', it will be estimated from headshape points.
-If automatic fitting fails (e.g., due to having too few digitization
-points), consider separately calling the fitting function with different
-options or specifying the origin manually.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">mf_head_origin</span> <span class="o">=</span> <span class="s1">'auto'</span>
-</code></pre>
-</div>
-</details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.mf_reference_run">
-
-        <code class="highlight">
-mf_reference_run: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
-
-
-      <a class="headerlink" href="#config.mf_reference_run" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>Despite all possible care to avoid movements in the MEG, the participant
-will likely slowly drift down from the Dewar or slightly shift the head
-around in the course of the recording session. Hence, to take this into
-account, we are realigning all data to a single position. For this, you need
-to define a reference run (typically the one in the middle of
-the recording session).</p>
-<p>Which run to take as the reference for adjusting the head position of all
-runs. If <code>None</code>, pick the first run.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">mf_reference_run</span> <span class="o">=</span> <span class="s1">'01'</span>  <span class="c1"># Use run "01"</span>
-</code></pre>
-</div>
-</details>
+<p>Auto-detect "noisy" channels and mark them as bad.</p>
 </div>
 </div>
                 
@@ -943,7 +772,7 @@ runs. If <code>None</code>, pick the first run.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="autobads.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../general.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -952,19 +781,19 @@ runs. If <code>None</code>, pick the first run.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Bad channel detection
+                General settings
               </div>
             </div>
           </a>
         
         
-          <a href="stim_artifact.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="maxfilter.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Stimulation artifact
+                Maxwell filter
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

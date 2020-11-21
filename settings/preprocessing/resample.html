@@ -18,7 +18,7 @@
     
     
       
-        <title>Stimulation artifact - MNE Study Template</title>
+        <title>Resampling - MNE Study Template</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.fix_stim_artifact" class="md-skip">
+        <a href="#config.resample_sfreq" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Stimulation artifact
+              Resampling
             
           </span>
         </div>
@@ -213,7 +213,7 @@
       
         
       
-      <a href="../basic.html" class="md-tabs__link md-tabs__link--active">
+      <a href="../general.html" class="md-tabs__link md-tabs__link--active">
         Configuration Options
       </a>
     </li>
@@ -399,8 +399,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../basic.html" class="md-nav__link">
-      Basic settings
+    <a href="../general.html" class="md-nav__link">
+      General settings
     </a>
   </li>
 
@@ -416,13 +416,13 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     <label class="md-nav__link" for="nav-4-2">
-      Continuous data
+      Preprocessing
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Continuous data" data-md-level="2">
+    <nav class="md-nav" aria-label="Preprocessing" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
         <span class="md-nav__icon md-icon"></span>
-        Continuous data
+        Preprocessing
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -455,59 +455,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Stimulation artifact
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="stim_artifact.html" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="stim_artifact.html" class="md-nav__link">
       Stimulation artifact
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#config.fix_stim_artifact" class="md-nav__link">
-    fix_stim_artifact
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.stim_artifact_tmin" class="md-nav__link">
-    stim_artifact_tmin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.stim_artifact_tmax" class="md-nav__link">
-    stim_artifact_tmax
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -515,10 +467,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4" >
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4" checked>
     <label class="md-nav__link" for="nav-4-2-4">
       Frequency filtering & resampling
       <span class="md-nav__icon md-icon"></span>
@@ -547,16 +501,93 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="resample.html" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Resampling
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="resample.html" class="md-nav__link md-nav__link--active">
       Resampling
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config.resample_sfreq" class="md-nav__link">
+    resample_sfreq
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.decim" class="md-nav__link">
+    decim
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="epochs.html" class="md-nav__link">
+      Epoching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="artifacts.html" class="md-nav__link">
+      Amplitude-based artifact removal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ssp_ica.html" class="md-nav__link">
+      SSP & ICA
+    </a>
   </li>
 
         
@@ -574,13 +605,13 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" >
     <label class="md-nav__link" for="nav-4-3">
-      Epoched data
+      Sensor-level analysis
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Epoched data" data-md-level="2">
+    <nav class="md-nav" aria-label="Sensor-level analysis" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
         <span class="md-nav__icon md-icon"></span>
-        Epoched data
+        Sensor-level analysis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -591,43 +622,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/epochs.html" class="md-nav__link">
-      Epoching
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/artifacts.html" class="md-nav__link">
-      Amplitude-based artifact removal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/ssp_ica.html" class="md-nav__link">
-      SSP & ICA
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/statistics.html" class="md-nav__link">
+    <a href="../sensor/statistics.html" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -639,7 +634,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/time_freq.html" class="md-nav__link">
+    <a href="../sensor/time_freq.html" class="md-nav__link">
       Time-frequency analysis
     </a>
   </li>
@@ -656,8 +651,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/inverse.html" class="md-nav__link">
-      Source estimation
+    <a href="../source/inverse.html" class="md-nav__link">
+      Source-level analysis
     </a>
   </li>
 
@@ -689,22 +684,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.fix_stim_artifact" class="md-nav__link">
-    fix_stim_artifact
+  <a href="#config.resample_sfreq" class="md-nav__link">
+    resample_sfreq
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.stim_artifact_tmin" class="md-nav__link">
-    stim_artifact_tmin
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.stim_artifact_tmax" class="md-nav__link">
-    stim_artifact_tmax
+  <a href="#config.decim" class="md-nav__link">
+    decim
   </a>
   
 </li>
@@ -721,63 +709,56 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/continuous_data/stim_artifact.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/preprocessing/resample.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Stimulation artifact</h1>
+                  <h1>Resampling</h1>
                 
-                <p>When using electric stimulation systems, e.g. for median nerve or index
-stimulation, it is frequent to have a stimulation artifact. This option
-allows to fix it by linear interpolation early in the pipeline on the raw
-data.</p>
+                <p>If you have acquired data with a very high sampling frequency (e.g. 2 kHz)
+you will likely want to downsample to lighten up the size of the files you
+are working with (pragmatics)
+If you are interested in typical analysis (up to 120 Hz) you can typically
+resample your data down to 500 Hz without preventing reliable time-frequency
+exploration of your data.</p>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.fix_stim_artifact">
+<h2 class="doc doc-heading" id="config.resample_sfreq">
 
         <code class="highlight">
-fix_stim_artifact: <span class="nb">bool</span>        </code>
+resample_sfreq: <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>        </code>
 
 
-      <a class="headerlink" href="#config.fix_stim_artifact" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.resample_sfreq" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>Apply interpolation to fix stimulation artifact.</p>
+<p>Specifies at which sampling frequency the data should be resampled.
+If None then no resampling will be done.</p>
 <details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">fix_stim_artifact</span> <span class="o">=</span> <span class="kc">False</span>
+<pre><span></span><code><span class="n">resample_sfreq</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># no resampling</span>
+<span class="n">resample_sfreq</span> <span class="o">=</span> <span class="mi">500</span>  <span class="c1"># resample to 500Hz</span>
 </code></pre>
 </div>
 </details>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.stim_artifact_tmin">
+<h2 class="doc doc-heading" id="config.decim">
 
         <code class="highlight">
-stim_artifact_tmin: <span class="nb">float</span>        </code>
+decim: <span class="nb">int</span>        </code>
 
 
-      <a class="headerlink" href="#config.stim_artifact_tmin" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.decim" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>Start time of the interpolation window in seconds.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">stim_artifact_tmin</span> <span class="o">=</span> <span class="mf">0.</span>  <span class="c1"># on stim onset</span>
-</code></pre>
-</div>
+<p>Says how much to decimate data at the epochs level.
+It is typically an alternative to the <code>resample_sfreq</code> parameter that
+can be used for resampling raw data. <code>1</code> means no decimation.</p>
+<details class="info" open="open"><summary>Good Practice / Advice</summary><p>Decimation requires to lowpass filtered the data to avoid aliasing.
+Note that using decimation is much faster than resampling.</p>
 </details>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.stim_artifact_tmax">
-
-        <code class="highlight">
-stim_artifact_tmax: <span class="nb">float</span>        </code>
-
-
-      <a class="headerlink" href="#config.stim_artifact_tmax" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>End time of the interpolation window in seconds.</p>
 <details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">stim_artifact_tmax</span> <span class="o">=</span> <span class="mf">0.01</span>  <span class="c1"># up to 10ms post-stimulation</span>
+<pre><span></span><code><span class="n">decim</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># no decimation</span>
+<span class="n">decim</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># decimate by 4 ie devide sampling frequency by 4</span>
 </code></pre>
 </div>
 </details>
@@ -801,7 +782,7 @@ stim_artifact_tmax: <span class="nb">float</span>        </code>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="maxfilter.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="filter.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -810,19 +791,19 @@ stim_artifact_tmax: <span class="nb">float</span>        </code>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Maxwell filter
+                Filtering
               </div>
             </div>
           </a>
         
         
-          <a href="filter.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="epochs.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Filtering
+                Epoching
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

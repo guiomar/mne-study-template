@@ -18,7 +18,7 @@
     
     
       
-        <title>Resampling - MNE Study Template</title>
+        <title>Epoching - MNE Study Template</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.resample_sfreq" class="md-skip">
+        <a href="#config.rename_events" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Resampling
+              Epoching
             
           </span>
         </div>
@@ -213,7 +213,7 @@
       
         
       
-      <a href="../basic.html" class="md-tabs__link md-tabs__link--active">
+      <a href="../general.html" class="md-tabs__link md-tabs__link--active">
         Configuration Options
       </a>
     </li>
@@ -399,8 +399,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../basic.html" class="md-nav__link">
-      Basic settings
+    <a href="../general.html" class="md-nav__link">
+      General settings
     </a>
   </li>
 
@@ -416,13 +416,13 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     <label class="md-nav__link" for="nav-4-2">
-      Continuous data
+      Preprocessing
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Continuous data" data-md-level="2">
+    <nav class="md-nav" aria-label="Preprocessing" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
         <span class="md-nav__icon md-icon"></span>
-        Continuous data
+        Preprocessing
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -467,12 +467,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4" checked>
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4" >
     <label class="md-nav__link" for="nav-4-2-4">
       Frequency filtering & resampling
       <span class="md-nav__icon md-icon"></span>
@@ -501,6 +499,23 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="resample.html" class="md-nav__link">
+      Resampling
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -510,12 +525,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Resampling
+        Epoching
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="resample.html" class="md-nav__link md-nav__link--active">
-      Resampling
+    <a href="epochs.html" class="md-nav__link md-nav__link--active">
+      Epoching
     </a>
     
       
@@ -530,15 +545,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.resample_sfreq" class="md-nav__link">
-    resample_sfreq
+  <a href="#config.rename_events" class="md-nav__link">
+    rename_events
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.decim" class="md-nav__link">
-    decim
+  <a href="#config.conditions" class="md-nav__link">
+    conditions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.tmin" class="md-nav__link">
+    tmin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.tmax" class="md-nav__link">
+    tmax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.baseline" class="md-nav__link">
+    baseline
   </a>
   
 </li>
@@ -550,8 +586,27 @@
   </li>
 
         
-      </ul>
-    </nav>
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="artifacts.html" class="md-nav__link">
+      Amplitude-based artifact removal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ssp_ica.html" class="md-nav__link">
+      SSP & ICA
+    </a>
   </li>
 
         
@@ -569,13 +624,13 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" >
     <label class="md-nav__link" for="nav-4-3">
-      Epoched data
+      Sensor-level analysis
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Epoched data" data-md-level="2">
+    <nav class="md-nav" aria-label="Sensor-level analysis" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
         <span class="md-nav__icon md-icon"></span>
-        Epoched data
+        Sensor-level analysis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -586,43 +641,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/epochs.html" class="md-nav__link">
-      Epoching
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/artifacts.html" class="md-nav__link">
-      Amplitude-based artifact removal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/ssp_ica.html" class="md-nav__link">
-      SSP & ICA
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/statistics.html" class="md-nav__link">
+    <a href="../sensor/statistics.html" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -634,7 +653,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/time_freq.html" class="md-nav__link">
+    <a href="../sensor/time_freq.html" class="md-nav__link">
       Time-frequency analysis
     </a>
   </li>
@@ -651,8 +670,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/inverse.html" class="md-nav__link">
-      Source estimation
+    <a href="../source/inverse.html" class="md-nav__link">
+      Source-level analysis
     </a>
   </li>
 
@@ -684,15 +703,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.resample_sfreq" class="md-nav__link">
-    resample_sfreq
+  <a href="#config.rename_events" class="md-nav__link">
+    rename_events
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.decim" class="md-nav__link">
-    decim
+  <a href="#config.conditions" class="md-nav__link">
+    conditions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.tmin" class="md-nav__link">
+    tmin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.tmax" class="md-nav__link">
+    tmax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.baseline" class="md-nav__link">
+    baseline
   </a>
   
 </li>
@@ -709,56 +749,107 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/continuous_data/resample.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/preprocessing/epochs.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Resampling</h1>
+                  <h1>Epoching</h1>
                 
-                <p>If you have acquired data with a very high sampling frequency (e.g. 2 kHz)
-you will likely want to downsample to lighten up the size of the files you
-are working with (pragmatics)
-If you are interested in typical analysis (up to 120 Hz) you can typically
-resample your data down to 500 Hz without preventing reliable time-frequency
-exploration of your data.</p>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.resample_sfreq">
+                <div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.rename_events">
 
         <code class="highlight">
-resample_sfreq: <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span>        </code>
+rename_events: <span class="nb">dict</span>        </code>
 
 
-      <a class="headerlink" href="#config.resample_sfreq" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.rename_events" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>Specifies at which sampling frequency the data should be resampled.
-If None then no resampling will be done.</p>
+<p>A dictionary specifying which events in the BIDS dataset to rename upon
+loading, and before processing begins.</p>
+<p>Pass an empty dictionary to not perform any renaming.</p>
+<details class="example" open="open"><summary>Example</summary><p>Rename <code>audio_left</code> in the BIDS dataset to <code>audio/left</code> in the
+pipeline:
+<div class="highlight">
+<pre><span></span><code><span class="n">rename_events</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'audio_left'</span><span class="p">:</span> <span class="s1">'audio/left'</span><span class="p">}</span>
+</code></pre>
+</div>
+</p>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.conditions">
+
+        <code class="highlight">
+conditions: <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+
+
+      <a class="headerlink" href="#config.conditions" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The condition names to consider. This can either be name of the
+experimental condition as specified in the BIDS <code>events.tsv</code> file; or
+the name of condition <em>grouped</em>, if the condition names contain the
+(MNE-specific) group separator, <code>/</code>. See the <a href="https://mne.tools/stable/auto_tutorials/epochs/plot_10_epochs_overview.html#subselecting-epochs">Subselecting epochs
+tutorial</a>
+for more information.</p>
 <details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">resample_sfreq</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># no resampling</span>
-<span class="n">resample_sfreq</span> <span class="o">=</span> <span class="mi">500</span>  <span class="c1"># resample to 500Hz</span>
+<pre><span></span><code><span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'visual/left'</span><span class="p">]</span>
+<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'auditory/right'</span><span class="p">]</span>
+<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory'</span><span class="p">]</span>  <span class="c1"># All "auditory" conditions (left AND right)</span>
+<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory'</span><span class="p">,</span> <span class="s1">'visual'</span><span class="p">]</span>
+<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'right'</span><span class="p">]</span>
 </code></pre>
 </div>
 </details>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.decim">
+<h2 class="doc doc-heading" id="config.tmin">
 
         <code class="highlight">
-decim: <span class="nb">int</span>        </code>
+tmin        </code>
 
 
-      <a class="headerlink" href="#config.decim" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.tmin" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>Says how much to decimate data at the epochs level.
-It is typically an alternative to the <code>resample_sfreq</code> parameter that
-can be used for resampling raw data. <code>1</code> means no decimation.</p>
-<details class="info" open="open"><summary>Good Practice / Advice</summary><p>Decimation requires to lowpass filtered the data to avoid aliasing.
-Note that using decimation is much faster than resampling.</p>
-</details>
+<p>The beginning of an epoch, relative to the respective event, in seconds.</p>
 <details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">decim</span> <span class="o">=</span> <span class="mi">1</span>  <span class="c1"># no decimation</span>
-<span class="n">decim</span> <span class="o">=</span> <span class="mi">4</span>  <span class="c1"># decimate by 4 ie devide sampling frequency by 4</span>
+<pre><span></span><code><span class="n">tmin</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.2</span>  <span class="c1"># take 200ms before event onset.</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.tmax">
+
+        <code class="highlight">
+tmax: <span class="nb">float</span>        </code>
+
+
+      <a class="headerlink" href="#config.tmax" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">tmax</span> <span class="o">=</span> <span class="mf">0.5</span>  <span class="c1"># take 500ms after event onset.</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.baseline">
+
+        <code class="highlight">
+baseline: <span class="n">Optional</span><span class="p">[</span><span class="nb">tuple</span><span class="p">]</span>        </code>
+
+
+      <a class="headerlink" href="#config.baseline" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>Specifies how to baseline-correct the epochs; if <code>None</code>, no baseline
+correction is applied.</p>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">baseline</span> <span class="o">=</span> <span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># baseline between tmin and 0</span>
 </code></pre>
 </div>
 </details>
@@ -782,7 +873,7 @@ Note that using decimation is much faster than resampling.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="filter.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="resample.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -791,19 +882,19 @@ Note that using decimation is much faster than resampling.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Filtering
+                Resampling
               </div>
             </div>
           </a>
         
         
-          <a href="../epoched_data/epochs.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="artifacts.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Epoching
+                Amplitude-based artifact removal
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

@@ -18,7 +18,7 @@
     
     
       
-        <title>Filtering - MNE Study Template</title>
+        <title>Amplitude-based artifact removal - MNE Study Template</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.l_freq" class="md-skip">
+        <a href="#config.reject" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Filtering
+              Amplitude-based artifact removal
             
           </span>
         </div>
@@ -213,7 +213,7 @@
       
         
       
-      <a href="../basic.html" class="md-tabs__link md-tabs__link--active">
+      <a href="../general.html" class="md-tabs__link md-tabs__link--active">
         Configuration Options
       </a>
     </li>
@@ -399,8 +399,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../basic.html" class="md-nav__link">
-      Basic settings
+    <a href="../general.html" class="md-nav__link">
+      General settings
     </a>
   </li>
 
@@ -416,13 +416,13 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" checked>
     <label class="md-nav__link" for="nav-4-2">
-      Continuous data
+      Preprocessing
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Continuous data" data-md-level="2">
+    <nav class="md-nav" aria-label="Preprocessing" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
         <span class="md-nav__icon md-icon"></span>
-        Continuous data
+        Preprocessing
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -467,12 +467,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4" checked>
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2-4" type="checkbox" id="nav-4-2-4" >
     <label class="md-nav__link" for="nav-4-2-4">
       Frequency filtering & resampling
       <span class="md-nav__icon md-icon"></span>
@@ -489,52 +487,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Filtering
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
-    <a href="filter.html" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="filter.html" class="md-nav__link">
       Filtering
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#config.l_freq" class="md-nav__link">
-    l_freq
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.h_freq" class="md-nav__link">
-    h_freq
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -555,6 +512,76 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="epochs.html" class="md-nav__link">
+      Epoching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Amplitude-based artifact removal
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="artifacts.html" class="md-nav__link md-nav__link--active">
+      Amplitude-based artifact removal
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#config.reject" class="md-nav__link">
+    reject
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="ssp_ica.html" class="md-nav__link">
+      SSP & ICA
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -569,13 +596,13 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" >
     <label class="md-nav__link" for="nav-4-3">
-      Epoched data
+      Sensor-level analysis
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Epoched data" data-md-level="2">
+    <nav class="md-nav" aria-label="Sensor-level analysis" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
         <span class="md-nav__icon md-icon"></span>
-        Epoched data
+        Sensor-level analysis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -586,43 +613,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/epochs.html" class="md-nav__link">
-      Epoching
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/artifacts.html" class="md-nav__link">
-      Amplitude-based artifact removal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/ssp_ica.html" class="md-nav__link">
-      SSP & ICA
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../epoched_data/statistics.html" class="md-nav__link">
+    <a href="../sensor/statistics.html" class="md-nav__link">
       Statistics
     </a>
   </li>
@@ -634,7 +625,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/time_freq.html" class="md-nav__link">
+    <a href="../sensor/time_freq.html" class="md-nav__link">
       Time-frequency analysis
     </a>
   </li>
@@ -651,8 +642,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../epoched_data/inverse.html" class="md-nav__link">
-      Source estimation
+    <a href="../source/inverse.html" class="md-nav__link">
+      Source-level analysis
     </a>
   </li>
 
@@ -684,15 +675,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.l_freq" class="md-nav__link">
-    l_freq
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.h_freq" class="md-nav__link">
-    h_freq
+  <a href="#config.reject" class="md-nav__link">
+    reject
   </a>
   
 </li>
@@ -709,53 +693,44 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/continuous_data/filter.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/preprocessing/artifacts.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Filtering</h1>
+                  <h1>Amplitude-based artifact removal</h1>
                 
-                <p>It is typically better to set your filtering properties on the raw data so
-as to avoid what we call border (or edge) effects.</p>
-<p>If you use this pipeline for evoked responses, you could consider
-a low-pass filter cut-off of h_freq = 40 Hz
-and possibly a high-pass filter cut-off of l_freq = 1 Hz
-so you would preserve only the power in the 1Hz to 40 Hz band.
-Note that highpass filtering is not necessarily recommended as it can
-distort waveforms of evoked components, or simply wash out any low
-frequency that can may contain brain signal. It can also act as
-a replacement for baseline correction in Epochs. See below.</p>
-<p>If you use this pipeline for time-frequency analysis, a default filtering
-coult be a high-pass filter cut-off of l_freq = 1 Hz
-a low-pass filter cut-off of h_freq = 120 Hz
-so you would preserve only the power in the 1Hz to 120 Hz band.</p>
-<p>If you need more fancy analysis, you are already likely past this kind
-of tips! 😇</p>
+                <details class="info" open="open"><summary>Good Practice / Advice</summary><p>Have a look at your raw data and train yourself to detect a blink, a heart
+beat and an eye movement.
+You can do a quick average of blink data and check what the amplitude looks
+like.</p>
+</details>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.l_freq">
+<h2 class="doc doc-heading" id="config.reject">
 
         <code class="highlight">
-l_freq: <span class="nb">float</span>        </code>
+reject: <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">]</span>        </code>
 
 
-      <a class="headerlink" href="#config.l_freq" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.reject" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>The low-frequency cut-off in the highpass filtering step.
-Keep it None if no highpass filtering should be applied.</p>
+<p>The rejection limits to mark epochs as bads.
+This allows to remove strong transient artifacts.
+If you want to reject and retrieve blinks or ECG artifacts later, e.g.
+with ICA, don't specify a value for the EOG and ECG channels, respectively
+(see examples below).</p>
+<p>Pass <code>None</code> to avoid automated epoch rejection based on amplitude.</p>
+<details class="note" open="open"><summary>Note</summary><p>These numbers tend to vary between subjects.. You might want to consider
+using the autoreject method by Jas et al. 2018.
+See https://autoreject.github.io</p>
+</details>
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">reject</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'grad'</span><span class="p">:</span> <span class="mf">4000e-13</span><span class="p">,</span> <span class="s1">'mag'</span><span class="p">:</span> <span class="mf">4e-12</span><span class="p">,</span> <span class="s1">'eog'</span><span class="p">:</span> <span class="mf">150e-6</span><span class="p">}</span>
+<span class="n">reject</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'grad'</span><span class="p">:</span> <span class="mf">4000e-13</span><span class="p">,</span> <span class="s1">'mag'</span><span class="p">:</span> <span class="mf">4e-12</span><span class="p">,</span> <span class="s1">'eeg'</span><span class="p">:</span> <span class="mf">200e-6</span><span class="p">}</span>
+<span class="n">reject</span> <span class="o">=</span> <span class="kc">None</span>
+</code></pre>
 </div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.h_freq">
-
-        <code class="highlight">
-h_freq: <span class="nb">float</span>        </code>
-
-
-      <a class="headerlink" href="#config.h_freq" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>The high-frequency cut-off in the lowpass filtering step.
-Keep it None if no lowpass filtering should be applied.</p>
+</details>
 </div>
 </div>
                 
@@ -776,7 +751,7 @@ Keep it None if no lowpass filtering should be applied.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="stim_artifact.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="epochs.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -785,19 +760,19 @@ Keep it None if no lowpass filtering should be applied.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Stimulation artifact
+                Epoching
               </div>
             </div>
           </a>
         
         
-          <a href="resample.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="ssp_ica.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Resampling
+                SSP & ICA
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

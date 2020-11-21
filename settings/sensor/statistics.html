@@ -18,7 +18,7 @@
     
     
       
-        <title>Time-frequency analysis - MNE Study Template</title>
+        <title>Statistics - MNE Study Template</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.time_frequency_conditions" class="md-skip">
+        <a href="#config.contrasts" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +103,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Time-frequency analysis
+              Statistics
             
           </span>
         </div>
@@ -213,7 +213,7 @@
       
         
       
-      <a href="../basic.html" class="md-tabs__link md-tabs__link--active">
+      <a href="../general.html" class="md-tabs__link md-tabs__link--active">
         Configuration Options
       </a>
     </li>
@@ -399,8 +399,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../basic.html" class="md-nav__link">
-      Basic settings
+    <a href="../general.html" class="md-nav__link">
+      General settings
     </a>
   </li>
 
@@ -414,13 +414,13 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2" >
     <label class="md-nav__link" for="nav-4-2">
-      Continuous data
+      Preprocessing
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Continuous data" data-md-level="2">
+    <nav class="md-nav" aria-label="Preprocessing" data-md-level="2">
       <label class="md-nav__title" for="nav-4-2">
         <span class="md-nav__icon md-icon"></span>
-        Continuous data
+        Preprocessing
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
@@ -431,7 +431,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/autobads.html" class="md-nav__link">
+    <a href="../preprocessing/autobads.html" class="md-nav__link">
       Bad channel detection
     </a>
   </li>
@@ -443,7 +443,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/maxfilter.html" class="md-nav__link">
+    <a href="../preprocessing/maxfilter.html" class="md-nav__link">
       Maxwell filter
     </a>
   </li>
@@ -455,7 +455,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/stim_artifact.html" class="md-nav__link">
+    <a href="../preprocessing/stim_artifact.html" class="md-nav__link">
       Stimulation artifact
     </a>
   </li>
@@ -487,7 +487,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/filter.html" class="md-nav__link">
+    <a href="../preprocessing/filter.html" class="md-nav__link">
       Filtering
     </a>
   </li>
@@ -499,7 +499,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../continuous_data/resample.html" class="md-nav__link">
+    <a href="../preprocessing/resample.html" class="md-nav__link">
       Resampling
     </a>
   </li>
@@ -507,6 +507,42 @@
         
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../preprocessing/epochs.html" class="md-nav__link">
+      Epoching
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../preprocessing/artifacts.html" class="md-nav__link">
+      Amplitude-based artifact removal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../preprocessing/ssp_ica.html" class="md-nav__link">
+      SSP & ICA
+    </a>
   </li>
 
         
@@ -526,64 +562,16 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
     <label class="md-nav__link" for="nav-4-3">
-      Epoched data
+      Sensor-level analysis
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Epoched data" data-md-level="2">
+    <nav class="md-nav" aria-label="Sensor-level analysis" data-md-level="2">
       <label class="md-nav__title" for="nav-4-3">
         <span class="md-nav__icon md-icon"></span>
-        Epoched data
+        Sensor-level analysis
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="epochs.html" class="md-nav__link">
-      Epoching
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="artifacts.html" class="md-nav__link">
-      Amplitude-based artifact removal
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="ssp_ica.html" class="md-nav__link">
-      SSP & ICA
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="statistics.html" class="md-nav__link">
-      Statistics
-    </a>
-  </li>
-
         
           
           
@@ -598,12 +586,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Time-frequency analysis
+        Statistics
         <span class="md-nav__icon md-icon"></span>
       </label>
     
-    <a href="time_freq.html" class="md-nav__link md-nav__link--active">
-      Time-frequency analysis
+    <a href="statistics.html" class="md-nav__link md-nav__link--active">
+      Statistics
     </a>
     
       
@@ -618,8 +606,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.time_frequency_conditions" class="md-nav__link">
-    time_frequency_conditions
+  <a href="#config.contrasts" class="md-nav__link">
+    contrasts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.decode" class="md-nav__link">
+    decode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.decoding_metric" class="md-nav__link">
+    decoding_metric
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.decoding_n_splits" class="md-nav__link">
+    decoding_n_splits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.n_boot" class="md-nav__link">
+    n_boot
   </a>
   
 </li>
@@ -628,6 +644,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="time_freq.html" class="md-nav__link">
+      Time-frequency analysis
+    </a>
   </li>
 
         
@@ -642,8 +670,8 @@
 
 
   <li class="md-nav__item">
-    <a href="inverse.html" class="md-nav__link">
-      Source estimation
+    <a href="../source/inverse.html" class="md-nav__link">
+      Source-level analysis
     </a>
   </li>
 
@@ -675,8 +703,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.time_frequency_conditions" class="md-nav__link">
-    time_frequency_conditions
+  <a href="#config.contrasts" class="md-nav__link">
+    contrasts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.decode" class="md-nav__link">
+    decode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.decoding_metric" class="md-nav__link">
+    decoding_metric
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.decoding_n_splits" class="md-nav__link">
+    decoding_n_splits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.n_boot" class="md-nav__link">
+    n_boot
   </a>
   
 </li>
@@ -693,28 +749,98 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/epoched_data/time_freq.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/mne-tools/mne-study-template/edit/master/docs/source/settings/sensor/statistics.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Time-frequency analysis</h1>
+                  <h1>Statistics</h1>
                 
                 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.time_frequency_conditions">
+<h2 class="doc doc-heading" id="config.contrasts">
 
         <code class="highlight">
-time_frequency_conditions: <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+contrasts: <span class="n">Iterable</span><span class="p">[</span><span class="nb">tuple</span><span class="p">]</span>        </code>
 
 
-      <a class="headerlink" href="#config.time_frequency_conditions" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#config.contrasts" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>The conditions to compute time-frequency decomposition on.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">time_frequency_conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'right'</span><span class="p">]</span>
+<p>The conditions to contrast via a subtraction of ERPs / ERFs. Each tuple
+in the list corresponds to one contrast. The condition names must be
+specified in <code>conditions</code> above. Pass an empty list to avoid calculation
+of contrasts.</p>
+<details class="example" open="open"><summary>Example</summary><p>Contrast the "left" and the "right" conditions by calculating
+<code>left - right</code> at every time point of the evoked responses:
+<div class="highlight">
+<pre><span></span><code><span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'right'</span><span class="p">]</span>
+<span class="n">contrasts</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'left'</span><span class="p">,</span> <span class="s1">'right'</span><span class="p">)]</span>  <span class="c1"># Note we pass a tuple inside the list!</span>
 </code></pre>
 </div>
+</p>
+<p>Contrast the "left" and the "right" conditions within the "auditory" and
+the "visual" modality, and "auditory" vs "visual" regardless of side:
+<div class="highlight">
+<pre><span></span><code><span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'auditory/right'</span><span class="p">,</span>
+              <span class="s1">'visual/left'</span><span class="p">,</span> <span class="s1">'visual/right'</span><span class="p">]</span>
+<span class="n">contrasts</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'auditory/right'</span><span class="p">),</span>
+             <span class="p">(</span><span class="s1">'visual/left'</span><span class="p">,</span> <span class="s1">'visual/right'</span><span class="p">),</span>
+             <span class="p">(</span><span class="s1">'auditory'</span><span class="p">,</span> <span class="s1">'visual'</span><span class="p">)]</span>
+</code></pre>
+</div>
+</p>
 </details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.decode">
+
+        <code class="highlight">
+decode: <span class="nb">bool</span>        </code>
+
+
+      <a class="headerlink" href="#config.decode" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>Whether to perform decoding (MVPA) on the contrasts specified above as
+"contrasts". MVPA will be performed on the level of individual epochs.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.decoding_metric">
+
+        <code class="highlight">
+decoding_metric: <span class="nb">str</span>        </code>
+
+
+      <a class="headerlink" href="#config.decoding_metric" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The metric to use for cross-validation. It can be <code>'roc_auc'</code> or <code>'accuracy'</code>
+or any other metric supported by <code>scikit-learn</code>.</p>
+<p>With AUC, chance level is the same regardless of class balance.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.decoding_n_splits">
+
+        <code class="highlight">
+decoding_n_splits: <span class="nb">int</span>        </code>
+
+
+      <a class="headerlink" href="#config.decoding_n_splits" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The number of folds (a.k.a. splits) to use in the cross-validation.</p>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.n_boot">
+
+        <code class="highlight">
+n_boot: <span class="nb">int</span>        </code>
+
+
+      <a class="headerlink" href="#config.n_boot" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The number of bootstrap resamples when estimating the standard error and
+confidence interval of the mean decoding score.</p>
 </div>
 </div>
                 
@@ -735,7 +861,7 @@ time_frequency_conditions: <span class="n">Iterable</span><span class="p">[</spa
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="statistics.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../preprocessing/ssp_ica.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -744,19 +870,19 @@ time_frequency_conditions: <span class="n">Iterable</span><span class="p">[</spa
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Statistics
+                SSP & ICA
               </div>
             </div>
           </a>
         
         
-          <a href="inverse.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="time_freq.html" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Source estimation
+                Time-frequency analysis
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
