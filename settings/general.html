@@ -468,7 +468,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.bids_root" class="md-nav__link">
+  <a href="#pathlib.bids_root" class="md-nav__link">
     bids_root
   </a>
   
@@ -823,10 +823,65 @@
 
 
 
+  
+  <li class="md-nav__item md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" >
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Source-level analysis
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Source-level analysis" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        <span class="md-nav__icon md-icon"></span>
+        Source-level analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="source/bem.html" class="md-nav__link">
+      BEM surface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="source/forward.html" class="md-nav__link">
+      Source space & forward solution
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
   <li class="md-nav__item">
     <a href="source/inverse.html" class="md-nav__link">
-      Source-level analysis
+      Inverse solution
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -865,7 +920,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#config.bids_root" class="md-nav__link">
+  <a href="#pathlib.bids_root" class="md-nav__link">
     bids_root
   </a>
   
@@ -1028,30 +1083,21 @@ saving the analysis results.</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.bids_root">
+<h2 class="doc doc-heading" id="pathlib.bids_root">
 
         <code class="highlight">
-bids_root: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+bids_root: <span class="kc">None</span>        </code>
 
 
-      <a class="headerlink" href="#config.bids_root" title="Permanent link">&para;</a></h2>
+      <a class="headerlink" href="#pathlib.bids_root" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>Speficy the BIDS root directory. Pass an empty string or <code>`None</code> to use
-the value specified in the <code>BIDS_ROOT</code> environment variable instead.
-Raises an exception if the BIDS root has not been specified.</p>
-<details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">bids_root</span> <span class="o">=</span> <span class="s1">'/path/to/your/bids_root'</span>  <span class="c1"># Use this to specify a path here.</span>
-<span class="n">bids_root</span> <span class="o">=</span> <span class="kc">None</span>  <span class="c1"># Make use of the ``BIDS_ROOT`` environment variable.</span>
-</code></pre>
-</div>
-</details>
-</div>
+    </div>
 </div>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.subjects_dir">
 
         <code class="highlight">
-subjects_dir: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+subjects_dir: <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">]</span>        </code>
 
 
       <a class="headerlink" href="#config.subjects_dir" title="Permanent link">&para;</a></h2>
@@ -1112,7 +1158,7 @@ If None (default), do not crop.</p>
 <h2 class="doc doc-heading" id="config.sessions">
 
         <code class="highlight">
-sessions: <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">]]</span>        </code>
+sessions: <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">]]</span>        </code>
 
 
       <a class="headerlink" href="#config.sessions" title="Permanent link">&para;</a></h2>

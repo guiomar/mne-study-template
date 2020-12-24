@@ -18,7 +18,7 @@
     
     
       
-        <title>Source-level analysis - MNE Study Template</title>
+        <title>Inverse solution - MNE Study Template</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#config.spacing" class="md-skip">
+        <a href="#config.inverse_method" class="md-skip">
           Skip to content
         </a>
       
@@ -106,7 +106,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Source-level analysis
+              Inverse solution
             
           </span>
         </div>
@@ -665,18 +665,70 @@
   
 
 
+  
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-4" type="checkbox" id="nav-4-4" checked>
+    
+    <label class="md-nav__link" for="nav-4-4">
+      Source-level analysis
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Source-level analysis" data-md-level="2">
+      <label class="md-nav__title" for="nav-4-4">
+        <span class="md-nav__icon md-icon"></span>
+        Source-level analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="bem.html" class="md-nav__link">
+      BEM surface
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+
+  <li class="md-nav__item">
+    <a href="forward.html" class="md-nav__link">
+      Source space & forward solution
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  
+
+
   <li class="md-nav__item md-nav__item--active">
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Source-level analysis
+        Inverse solution
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="inverse.html" class="md-nav__link md-nav__link--active">
-      Source-level analysis
+      Inverse solution
     </a>
     
       
@@ -689,34 +741,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#config.spacing" class="md-nav__link">
-    spacing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mindist" class="md-nav__link">
-    mindist
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.loose" class="md-nav__link">
-    loose
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.depth" class="md-nav__link">
-    depth
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#config.inverse_method" class="md-nav__link">
@@ -732,17 +756,15 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#config.smooth" class="md-nav__link">
-    smooth
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
     
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -774,34 +796,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#config.spacing" class="md-nav__link">
-    spacing
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.mindist" class="md-nav__link">
-    mindist
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.loose" class="md-nav__link">
-    loose
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.depth" class="md-nav__link">
-    depth
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#config.inverse_method" class="md-nav__link">
     inverse_method
   </a>
@@ -811,13 +805,6 @@
         <li class="md-nav__item">
   <a href="#config.noise_cov" class="md-nav__link">
     noise_cov
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#config.smooth" class="md-nav__link">
-    smooth
   </a>
   
 </li>
@@ -839,71 +826,9 @@
                   </a>
                 
                 
-                  <h1>Source-level analysis</h1>
+                  <h1>Inverse solution</h1>
                 
                 <div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.spacing">
-
-        <code class="highlight">
-spacing: <span class="nb">str</span>        </code>
-
-
-      <a class="headerlink" href="#config.spacing" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>The spacing to use. Can be <code>'ico#'</code> for a recursively subdivided
-icosahedron, <code>'oct#'</code> for a recursively subdivided octahedron,
-<code>'all'</code> for all points, or an integer to use appoximate
-distance-based spacing (in mm).</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.mindist">
-
-        <code class="highlight">
-mindist: <span class="nb">float</span>        </code>
-
-
-      <a class="headerlink" href="#config.mindist" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>Exclude points closer than this distance (mm) to the bounding surface.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.loose">
-
-        <code class="highlight">
-loose: <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'auto'</span><span class="p">]]</span>        </code>
-
-
-      <a class="headerlink" href="#config.loose" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>Value that weights the source variances of the dipole components
-that are parallel (tangential) to the cortical surface. If loose
-is 0 then the solution is computed with fixed orientation,
-and fixed must be True or "auto".
-If loose is 1, it corresponds to free orientations.
-The default value ('auto') is set to 0.2 for surface-oriented source
-space and set to 1.0 for volumetric, discrete, or mixed source spaces,
-unless <code>fixed is True</code> in which case the value 0. is used.</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.depth">
-
-        <code class="highlight">
-depth: <span class="n">Union</span><span class="p">[</span><span class="nb">float</span><span class="p">,</span> <span class="nb">dict</span><span class="p">]</span>        </code>
-
-
-      <a class="headerlink" href="#config.depth" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>If float (default 0.8), it acts as the depth weighting exponent (<code>exp</code>)
-to use (must be between 0 and 1). None is equivalent to 0, meaning no
-depth weighting is performed. Can also be a <code>dict</code> containing additional
-keyword arguments to pass to :func:<code>mne.forward.compute_depth_prior</code>
-(see docstring for details and defaults).</p>
-</div>
-</div>
-<div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.inverse_method">
 
         <code class="highlight">
@@ -960,20 +885,6 @@ event:
 </details>
 </div>
 </div>
-<div class="doc doc-object doc-attribute">
-<h2 class="doc doc-heading" id="config.smooth">
-
-        <code class="highlight">
-smooth: <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>        </code>
-
-
-      <a class="headerlink" href="#config.smooth" title="Permanent link">&para;</a></h2>
-<div class="doc doc-contents first">
-<p>Number of iterations for the smoothing of the surface data.
-If None, smooth is automatically defined to fill the surface
-with non-zero values. The default is spacing=None.</p>
-</div>
-</div>
                 
               
               
@@ -992,7 +903,7 @@ with non-zero values. The default is spacing=None.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../sensor/time_freq.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="forward.html" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1001,7 +912,7 @@ with non-zero values. The default is spacing=None.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Time-frequency analysis
+                Source space & forward solution
               </div>
             </div>
           </a>
