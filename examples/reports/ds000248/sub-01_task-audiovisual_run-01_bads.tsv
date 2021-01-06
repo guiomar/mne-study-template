@@ -1,0 +1,4 @@
+name	reason
+EEG 053	pre-existing (before mne-study-template was run)
+MEG 2313	auto-noisy
+MEG 2443	pre-existing (before mne-study-template was run)
