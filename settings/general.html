@@ -231,22 +231,6 @@
   
 
       
-        
-  
-  
-
-
-  
-  
-  
-    <li class="md-tabs__item">
-      <a href="../examples/ds000248.html" class="md-tabs__link">
-        Examples
-      </a>
-    </li>
-  
-
-      
     </ul>
   </div>
 </nav>
@@ -919,48 +903,6 @@
   </li>
 
     
-      
-      
-      
-
-
-
-  
-  <li class="md-nav__item md-nav__item--nested">
-    
-    
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
-    
-    <label class="md-nav__link" for="nav-5">
-      Examples
-      <span class="md-nav__icon md-icon"></span>
-    </label>
-    <nav class="md-nav" aria-label="Examples" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon"></span>
-        Examples
-      </label>
-      <ul class="md-nav__list" data-md-scrollfix>
-        
-        
-          
-          
-          
-
-
-
-  <li class="md-nav__item">
-    <a href="../examples/ds000248.html" class="md-nav__link">
-      ds000248
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
   </ul>
 </nav>
                   </div>
@@ -1138,8 +1080,7 @@
                 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.study_name">
 
-        <code class="highlight">
-study_name: <span class="nb">str</span>        </code>
+<code class="highlight language-python"><span class="n">study_name</span><span class="p">:</span> <span class="nb">str</span></code>
 
 
       <a class="headerlink" href="#config.study_name" title="Permanent link">&para;</a></h2>
@@ -1156,19 +1097,18 @@ saving the analysis results.</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="pathlib.bids_root">
 
-        <code class="highlight">
-bids_root: <span class="kc">None</span>        </code>
+<code class="highlight language-python"><span class="n">bids_root</span><span class="p">:</span> <span class="kc">None</span></code>
 
 
       <a class="headerlink" href="#pathlib.bids_root" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
+
     </div>
 </div>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.subjects_dir">
 
-        <code class="highlight">
-subjects_dir: <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">subjects_dir</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.subjects_dir" title="Permanent link">&para;</a></h2>
@@ -1181,8 +1121,7 @@ $SUBJECTS_DIR used by the Freesurfer software.</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.daysback">
 
-        <code class="highlight">
-daysback: <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">daysback</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.daysback" title="Permanent link">&para;</a></h2>
@@ -1200,8 +1139,7 @@ of FIFF files.</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.interactive">
 
-        <code class="highlight">
-interactive: <span class="nb">bool</span>        </code>
+<code class="highlight language-python"><span class="n">interactive</span><span class="p">:</span> <span class="nb">bool</span></code>
 
 
       <a class="headerlink" href="#config.interactive" title="Permanent link">&para;</a></h2>
@@ -1215,8 +1153,7 @@ window.</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.crop">
 
-        <code class="highlight">
-crop: <span class="n">Optional</span><span class="p">[</span><span class="nb">tuple</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">crop</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">tuple</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.crop" title="Permanent link">&para;</a></h2>
@@ -1228,8 +1165,7 @@ If None (default), do not crop.</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.sessions">
 
-        <code class="highlight">
-sessions: <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">]]</span>        </code>
+<code class="highlight language-python"><span class="n">sessions</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">List</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="o">&amp;</span><span class="c1">#39;all&#39;]]</span></code>
 
 
       <a class="headerlink" href="#config.sessions" title="Permanent link">&para;</a></h2>
@@ -1240,8 +1176,7 @@ sessions: <span class="n">Union</span><span class="p">[</span><span class="n">Li
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.task">
 
-        <code class="highlight">
-task: <span class="nb">str</span>        </code>
+<code class="highlight language-python"><span class="n">task</span><span class="p">:</span> <span class="nb">str</span></code>
 
 
       <a class="headerlink" href="#config.task" title="Permanent link">&para;</a></h2>
@@ -1252,8 +1187,7 @@ task: <span class="nb">str</span>        </code>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.runs">
 
-        <code class="highlight">
-runs: <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">]]</span>        </code>
+<code class="highlight language-python"><span class="n">runs</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">,</span> <span class="n">Literal</span><span class="p">[</span><span class="o">&amp;</span><span class="c1">#39;all&#39;]]</span></code>
 
 
       <a class="headerlink" href="#config.runs" title="Permanent link">&para;</a></h2>
@@ -1264,8 +1198,7 @@ runs: <span class="n">Union</span><span class="p">[</span><span class="n">Iterab
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.acq">
 
-        <code class="highlight">
-acq: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">acq</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.acq" title="Permanent link">&para;</a></h2>
@@ -1276,8 +1209,7 @@ acq: <span class="n">Optional</span><span class="p">[</span><span class="nb">str
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.proc">
 
-        <code class="highlight">
-proc: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">proc</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.proc" title="Permanent link">&para;</a></h2>
@@ -1288,8 +1220,7 @@ proc: <span class="n">Optional</span><span class="p">[</span><span class="nb">st
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.rec">
 
-        <code class="highlight">
-rec: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">rec</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.rec" title="Permanent link">&para;</a></h2>
@@ -1300,8 +1231,7 @@ rec: <span class="n">Optional</span><span class="p">[</span><span class="nb">str
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.space">
 
-        <code class="highlight">
-space: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">space</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.space" title="Permanent link">&para;</a></h2>
@@ -1312,8 +1242,7 @@ space: <span class="n">Optional</span><span class="p">[</span><span class="nb">s
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.subjects">
 
-        <code class="highlight">
-subjects: <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">Literal</span><span class="p">[</span><span class="s1">'all'</span><span class="p">]]</span>        </code>
+<code class="highlight language-python"><span class="n">subjects</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">],</span> <span class="n">Literal</span><span class="p">[</span><span class="o">&amp;</span><span class="c1">#39;all&#39;]]</span></code>
 
 
       <a class="headerlink" href="#config.subjects" title="Permanent link">&para;</a></h2>
@@ -1338,8 +1267,7 @@ section).</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.exclude_subjects">
 
-        <code class="highlight">
-exclude_subjects: <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">exclude_subjects</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.exclude_subjects" title="Permanent link">&para;</a></h2>
@@ -1356,8 +1284,7 @@ The <code>emptyroom</code> subject will be excluded automatically.</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.process_er">
 
-        <code class="highlight">
-process_er: <span class="nb">bool</span>        </code>
+<code class="highlight language-python"><span class="n">process_er</span><span class="p">:</span> <span class="nb">bool</span></code>
 
 
       <a class="headerlink" href="#config.process_er" title="Permanent link">&para;</a></h2>
@@ -1373,8 +1300,7 @@ automatically.</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.ch_types">
 
-        <code class="highlight">
-ch_types: <span class="n">Iterable</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="s1">'meg'</span><span class="p">,</span> <span class="s1">'mag'</span><span class="p">,</span> <span class="s1">'grad'</span><span class="p">,</span> <span class="s1">'eeg'</span><span class="p">]]</span>        </code>
+<code class="highlight language-python"><span class="n">ch_types</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="o">&amp;</span><span class="c1">#39;meg&#39;, &#39;mag&#39;, &#39;grad&#39;, &#39;eeg&#39;]]</span></code>
 
 
       <a class="headerlink" href="#config.ch_types" title="Permanent link">&para;</a></h2>
@@ -1401,8 +1327,7 @@ ch_types: <span class="n">Iterable</span><span class="p">[</span><span class="n"
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.data_type">
 
-        <code class="highlight">
-data_type: <span class="n">Optional</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="s1">'meg'</span><span class="p">,</span> <span class="s1">'eeg'</span><span class="p">]]</span>        </code>
+<code class="highlight language-python"><span class="n">data_type</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="o">&amp;</span><span class="c1">#39;meg&#39;, &#39;eeg&#39;]]</span></code>
 
 
       <a class="headerlink" href="#config.data_type" title="Permanent link">&para;</a></h2>
@@ -1438,8 +1363,7 @@ wish to process the gradiometer data:</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.eeg_template_montage">
 
-        <code class="highlight">
-eeg_template_montage: <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span>        </code>
+<code class="highlight language-python"><span class="n">eeg_template_montage</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
 
 
       <a class="headerlink" href="#config.eeg_template_montage" title="Permanent link">&para;</a></h2>
