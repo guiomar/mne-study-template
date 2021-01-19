@@ -637,6 +637,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config.reject_tmin" class="md-nav__link">
+    reject_tmin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#config.reject_tmax" class="md-nav__link">
     reject_tmax
   </a>
@@ -961,6 +968,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config.reject_tmin" class="md-nav__link">
+    reject_tmin
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#config.reject_tmax" class="md-nav__link">
     reject_tmax
   </a>
@@ -1019,6 +1033,21 @@ See https://autoreject.github.io</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.reject_tmin">
+
+<code class="highlight language-python"><span class="n">reject_tmin</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
+
+
+      <a class="headerlink" href="#config.reject_tmin" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<details class="example" open="open"><summary>Example</summary><div class="highlight">
+<pre><span></span><code><span class="n">reject_tmin</span> <span class="o">=</span> <span class="o">-</span><span class="mf">0.1</span>  <span class="c1"># 100 ms before event onset.</span>
+</code></pre>
+</div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.reject_tmax">
 
 <code class="highlight language-python"><span class="n">reject_tmax</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
@@ -1027,7 +1056,7 @@ See https://autoreject.github.io</p>
       <a class="headerlink" href="#config.reject_tmax" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
 <details class="example" open="open"><summary>Example</summary><div class="highlight">
-<pre><span></span><code><span class="n">reject_tmax</span> <span class="o">=</span> <span class="mf">0.3</span>  <span class="c1"># take 300ms after event onset.</span>
+<pre><span></span><code><span class="n">reject_tmax</span> <span class="o">=</span> <span class="mf">0.3</span>  <span class="c1"># 300 ms after event onset.</span>
 </code></pre>
 </div>
 </details>
