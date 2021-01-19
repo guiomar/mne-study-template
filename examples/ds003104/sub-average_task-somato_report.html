@@ -47,6 +47,11 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap requires jQuery");+func
   justify-content: center;
   text-align: center;
 }
+
+th, td {
+  text-align: center;
+}
+
 </style>
 <script type="text/javascript">
 
@@ -278,7 +283,7 @@ footer .navbar-text {
 <li class="report_events" id="1">
     <h4>Event counts</h4>
     <div class="thumbnail"><div class="event-counts">
-<table border="1" class="dataframe">
+<table border="0" class="dataframe table table-striped table-borderless table-hover">
   <thead>
     <tr>
       <th></th>
