@@ -1050,23 +1050,30 @@ None of the scripts should be edited.</p>
 <h2 id="run-the-study-template">Run the Study Template<a class="headerlink" href="#run-the-study-template" title="Permanent link">&para;</a></h2>
 <details class="example" open="open"><summary>Run the full Study Template</summary><p>To run the full Study Template, execute the following command in your
 terminal:
-<div class="highlight"><pre><span></span><code>python run.py all --config<span class="o">=</span>/path/to/your/custom_config.py
+<div class="highlight"><pre><span></span><code>python run.py --config<span class="o">=</span>/path/to/your/custom_config.py
 </code></pre></div></p>
 </details>
 <details class="example"><summary>Run only parts of the Study Template</summary><p>Run only the preprocessing steps:
-<div class="highlight"><pre><span></span><code>python run.py preprocessing --config<span class="o">=</span>/path/to/your/custom_config.py
+<div class="highlight"><pre><span></span><code>python run.py --config<span class="o">=</span>/path/to/your/custom_config.py --steps<span class="o">=</span>preprocessing
 </code></pre></div></p>
 <p>Run only the sensor-level processing steps:
-<div class="highlight"><pre><span></span><code>python run.py sensor --config<span class="o">=</span>/path/to/your/custom_config.py
+<div class="highlight"><pre><span></span><code>python run.py --config<span class="o">=</span>/path/to/your/custom_config.py --steps<span class="o">=</span>sensor
 </code></pre></div></p>
 <p>Run only the source-level (inverse solution) processing steps:
-<div class="highlight"><pre><span></span><code>python run.py <span class="nb">source</span> --config<span class="o">=</span>/path/to/your/custom_config.py
+<div class="highlight"><pre><span></span><code>python run.py --config<span class="o">=</span>/path/to/your/custom_config.py --steps<span class="o">=</span><span class="nb">source</span>
 </code></pre></div></p>
 <p>Only generate the report:
-<div class="highlight"><pre><span></span><code>python run.py report --config<span class="o">=</span>/path/to/your/custom_config.py
+<div class="highlight"><pre><span></span><code>python run.py --config<span class="o">=</span>/path/to/your/custom_config.py --steps<span class="o">=</span>report
 </code></pre></div></p>
 <p>(Re-)run ICA:
-<div class="highlight"><pre><span></span><code>python run.py preprocessing/run_ica
+<div class="highlight"><pre><span></span><code>python run.py --config<span class="o">=</span>/path/to/your/custom_config.py <span class="se">\</span>
+              --steps<span class="o">=</span>preprocessing/ica
+</code></pre></div></p>
+<p>You can also run multiple steps with one command by separating different
+steps by a comma. For example, to run preprocessing and sensor-level
+processing steps using a single command, do:
+<div class="highlight"><pre><span></span><code>python run.py --config<span class="o">=</span>/path/to/your/custom_config.py <span class="se">\</span>
+              --steps<span class="o">=</span>preprocessing,sensor
 </code></pre></div></p>
 </details>
                 
