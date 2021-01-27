@@ -616,8 +616,29 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config.eeg_reference" class="md-nav__link">
+    eeg_reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#config.eeg_template_montage" class="md-nav__link">
     eeg_template_montage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.drop_channels" class="md-nav__link">
+    drop_channels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.analyze_channels" class="md-nav__link">
+    analyze_channels
   </a>
   
 </li>
@@ -1192,8 +1213,29 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#config.eeg_reference" class="md-nav__link">
+    eeg_reference
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#config.eeg_template_montage" class="md-nav__link">
     eeg_template_montage
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.drop_channels" class="md-nav__link">
+    drop_channels
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#config.analyze_channels" class="md-nav__link">
+    analyze_channels
   </a>
   
 </li>
@@ -1501,6 +1543,38 @@ wish to process the gradiometer data:</p>
 </div>
 </div>
 <div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.eeg_reference">
+
+<code class="highlight language-python"><span class="n">eeg_reference</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="o">&amp;</span><span class="c1">#39;average&#39;], str, Iterable[str]]</span></code>
+
+
+      <a class="headerlink" href="#config.eeg_reference" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The EEG reference to use. If <code>average</code>, will use the average reference,
+i.e. the average across all channels. If a string, must be the name of a single
+channel. To use multiple channels as reference, set to a list of channel names.</p>
+<details class="example" open="open"><summary>Example</summary><p>Use the average reference:
+<div class="highlight">
+<pre><span></span><code><span class="n">eeg_reference</span> <span class="o">=</span> <span class="s1">'average'</span>
+</code></pre>
+</div>
+</p>
+<p>Use the <code>P9</code> channel as reference:
+<div class="highlight">
+<pre><span></span><code><span class="n">eeg_reference</span> <span class="o">=</span> <span class="s1">'P9'</span>
+</code></pre>
+</div>
+</p>
+<p>Use the average of the <code>P9</code> and <code>P10</code> channels as reference:
+<div class="highlight">
+<pre><span></span><code><span class="n">eeg_reference</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'P9'</span><span class="p">,</span> <span class="s1">'P10'</span><span class="p">]</span>
+</code></pre>
+</div>
+</p>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.eeg_template_montage">
 
 <code class="highlight language-python"><span class="n">eeg_template_montage</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
@@ -1528,6 +1602,51 @@ https://mne.tools/stable/generated/mne.channels.make_standard_montage.html</p>
 <p>Apply 64-channel Biosemi 10/20 template montage:
 <div class="highlight">
 <pre><span></span><code><span class="n">eeg_template_montage</span> <span class="o">=</span> <span class="s1">'biosemi64'</span>
+</code></pre>
+</div>
+</p>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.drop_channels">
+
+<code class="highlight language-python"><span class="n">drop_channels</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+
+
+      <a class="headerlink" href="#config.drop_channels" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>Names of channels to remove from the data. This can be useful, for example,
+if you have added a new bipolar channel via <code>eeg_bipolar_channels</code> and now wish
+to remove the anode, cathode, or both.</p>
+<details class="example" open="open"><summary>Example</summary><p>Exclude channels <code>Fp1</code> and <code>Cz</code> from processing:
+<div class="highlight">
+<pre><span></span><code><span class="n">drop_channels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Fp1'</span><span class="p">,</span> <span class="s1">'Cz]</span>
+</code></pre>
+</div>
+</p>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-attribute">
+<h2 class="doc doc-heading" id="config.analyze_channels">
+
+<code class="highlight language-python"><span class="n">analyze_channels</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="o">&amp;</span><span class="c1">#39;all&#39;], Iterable[str]]</span></code>
+
+
+      <a class="headerlink" href="#config.analyze_channels" title="Permanent link">&para;</a></h2>
+<div class="doc doc-contents first">
+<p>The names of the channels to analyze during ERP/ERF and time-frequency analysis
+steps. For certain paradigms, e.g. EEG ERP research, it is common to contrain
+sensor-space analysis to only a few specific sensors. If <code>'all'</code>, do not
+exclude any channels (except for those selected for removal via the
+<code>drop_channels</code> setting). The constraint will be applied to all sensor-level
+analyses after the preprocessing stage, but not to the preprocessing stage
+itself, nor to the source analysis stage.</p>
+<details class="example" open="open"><summary>Example</summary><p>Only use channel <code>Pz</code> for ERP, evoked contrasts, time-by-time
+decoding, and time-frequency analysis:
+<div class="highlight">
+<pre><span></span><code><span class="n">analyze_channels</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'Pz'</span><span class="p">]</span>
 </code></pre>
 </div>
 </p>

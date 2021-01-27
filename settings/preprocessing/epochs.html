@@ -1052,11 +1052,11 @@ pipeline:
 
       <a class="headerlink" href="#config.conditions" title="Permanent link">&para;</a></h2>
 <div class="doc doc-contents first">
-<p>The condition names to consider. This can either be name of the
-experimental condition as specified in the BIDS <code>events.tsv</code> file; or
-the name of condition <em>grouped</em>, if the condition names contain the
-(MNE-specific) group separator, <code>/</code>. See the <a href="https://mne.tools/stable/auto_tutorials/epochs/plot_10_epochs_overview.html#subselecting-epochs">Subselecting epochs
-tutorial</a>
+<p>The events based on which to create epochs and evoked responses.
+This can either be name of the experimental condition as specified in the
+BIDS <code>events.tsv</code> file; or the name of condition <em>grouped</em>, if the condition
+names contain the (MNE-specific) group separator, <code>/</code>. See the <a href="https://mne.tools/stable/auto_tutorials/epochs/plot_10_epochs_overview.html#subselecting-epochs">Subselecting
+epochs tutorial</a>
 for more information.</p>
 <details class="example" open="open"><summary>Example</summary><div class="highlight">
 <pre><span></span><code><span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'auditory/left'</span><span class="p">,</span> <span class="s1">'visual/left'</span><span class="p">]</span>
