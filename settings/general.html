@@ -1612,7 +1612,7 @@ a subset of them here, only this subset will be used during processing.</p>
 <div class="doc doc-object doc-attribute">
 <h2 class="doc doc-heading" id="config.eeg_bipolar_channels">
 
-<code class="highlight language-python"><span class="n">eeg_bipolar_channels</span><span class="p">:</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span></code>
+<code class="highlight language-python"><span class="n">eeg_bipolar_channels</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Tuple</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]]</span></code>
 
 
       <a class="headerlink" href="#config.eeg_bipolar_channels" title="Permanent link">&para;</a></h2>
@@ -1621,11 +1621,13 @@ a subset of them here, only this subset will be used during processing.</p>
 between the two combined channels, and add it to the data.
 A typical use case is the combination of two EOG channels – for example, a
 left and a right horizontal EOG – into a single, bipolar EOG channel. You need
-to pass a list of tuples, where the tuples consist of three strings: name of
-the channel acting as anode, name of the channel acting as cathode, and desired
-name of the bipolar channel, i.e. <code>(anode, cathode, ch_name)</code>. You can request
-to construct multiple bipolar channels by passing multiple tuples, one for each
-channel. See the examples below.</p>
+to pass a dictionary whose <strong>keys</strong> are the name of the new bipolar channel you
+wish to create, and whose <strong>values</strong> are tuples consisting of two strings: the
+name of the channel acting as anode and the name of the channel acting as
+cathode, i.e. <code>{'ch_name': ('anode', 'cathode')}</code>. You can request
+to construct more than one bipolar channel by specifying multiple key/value
+pairs. See the examples below.</p>
+<p>Can also be <code>None</code> if you do not want to create bipolar channels.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The channels used to create the bipolar channels are <strong>not</strong> automatically
@@ -1634,14 +1636,14 @@ dropped from the data. To drop channels, set <code>drop_channels</code>.</p>
 <details class="example" open="open"><summary>Example</summary><p>Combine the existing channels <code>HEOG_left</code> and <code>HEOG_right</code> into a new,
 bipolar channel, <code>HEOG</code>:
 <div class="highlight">
-<pre><span></span><code><span class="n">eeg_add_bipolar_channels</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'HEOG_left'</span><span class="p">,</span> <span class="s1">'HEOG_right'</span><span class="p">,</span> <span class="s1">'HEOG'</span><span class="p">)]</span>
+<pre><span></span><code><span class="n">eeg_add_bipolar_channels</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'HEOG'</span><span class="p">:</span> <span class="p">(</span><span class="s1">'HEOG_left'</span><span class="p">,</span> <span class="s1">'HEOG_right'</span><span class="p">)}</span>
 </code></pre>
 </div>
 </p>
 <p>Create two bipolar channels, <code>HEOG</code> and <code>VEOG</code>:
 <div class="highlight">
-<pre><span></span><code><span class="n">eeg_add_bipolar_channels</span> <span class="o">=</span> <span class="p">[(</span><span class="s1">'HEOG_left'</span><span class="p">,</span> <span class="s1">'HEOG_right'</span><span class="p">,</span> <span class="s1">'HEOG'</span><span class="p">),</span>
-                            <span class="p">(</span><span class="s1">'VEOG_lower'</span><span class="p">,</span> <span class="s1">'VEOG_upper'</span><span class="p">,</span> <span class="s1">'VEOG'</span><span class="p">)]</span>
+<pre><span></span><code><span class="n">eeg_add_bipolar_channels</span> <span class="o">=</span> <span class="p">{</span><span class="s1">'HEOG'</span><span class="p">:</span> <span class="p">(</span><span class="s1">'HEOG_left'</span><span class="p">,</span> <span class="s1">'HEOG_right'</span><span class="p">),</span>
+                            <span class="s1">'VEOG'</span><span class="p">:</span> <span class="p">(</span><span class="s1">'VEOG_lower'</span><span class="p">,</span> <span class="s1">'VEOG_upper'</span><span class="p">)}</span>
 </code></pre>
 </div>
 </p>
